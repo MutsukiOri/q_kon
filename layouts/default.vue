@@ -1,16 +1,16 @@
 <template>
 	<div class="bg">
     <div>
-      <Tabs />
       <Header />
-
     </div>
-      <main class="container">
-      <Nuxt />
-		</main>
-    
-
-
+      <main>
+        <div class="tab">
+          <Tabs />
+        </div>
+        <div class="pages">
+          <Nuxt />
+        </div>
+      </main>
 	</div>
 </template>
 
@@ -29,28 +29,17 @@
 </script>
 <style scoped>
 .bg {
-  background-color: burlywood;
+  background-color: rgb(245, 199, 140);
+  padding-bottom: 25px;
 }
-.container {
-  margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+
+.pages {
+  padding: 3%;
 }
 
 .title {
   font-family:
-    'Quicksand',
-    'Source Sans Pro',
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
-    Roboto,
-    'Helvetica Neue',
-    Arial,
-    sans-serif;
+  HiraKakuPro-W3, "ヒラギノ角ゴ Pro W3", メイリオ, "MS P ゴシック", verdana, sans-serif;
   display: block;
   font-weight: 300;
   font-size: 100px;
@@ -58,9 +47,11 @@
   letter-spacing: 1px;
 }
 
-	main {
+
+main {
 		min-height: 600px;
-		/* background-color: #ddd; */
+    /* min-width: 380px; */
+		background-color: turquoise;
 		text-align: center;
 		padding: 30px;
 	}
@@ -71,6 +62,6 @@
 	.page-enter,
 	.page-leave-active {
 		opacity: 0;
-		transform: translate(0, 300px);
+		transform: translate(0, 30px);
 	}
 </style>

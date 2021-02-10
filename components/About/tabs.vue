@@ -42,11 +42,11 @@ export default {
 <style scoped>
 
 ol {
-  margin-top: 150px;
+  margin-top: 15px;
   /* margin-left: 5%; */
   /* width: 1el; */
   /* display:flex; */
-  list-style: none;
+  /* list-style: none; */
   position: fixed;
   /* background-color: yellowgreen; */
 }
@@ -57,7 +57,7 @@ li {
   /* margin-left:0px;
   margin-right:10px; */
   font-size: 17px;
-  position: relative;
+  /* position: relative; */
   /* background-color: skyblue; */
   border-radius: 10px;
   transition: 1s;

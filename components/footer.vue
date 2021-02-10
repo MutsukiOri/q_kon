@@ -9,7 +9,7 @@ p {
     text-align: right;
 }
 .ft {
-    display: flex;
     justify-content: left;
 }
+
 </style>

@@ -26,7 +26,7 @@ export default {
         url: '/about'
       },
       {
-        name: 'info',
+        name: 'Info',
         url: '/info'
       },
       {
@@ -41,22 +41,23 @@ export default {
 
 <style scoped>
 ol {
-  margin-top: 150px;
-  /* margin-left: 5%; */
+  margin-top: -100px;
+  margin-left: 0%;
   /* width: 1el; */
   /* display:flex; */
   list-style: none;
   position: fixed;
-  background-color: yellowgreen;
+  /* background-color: yellowgreen; */
   /* padding-left: 100px; */
+  opacity: 0.99;
 }
 
 li {
   width: 120px;
   height: 50px;
-  /* margin-left:0px;
-  margin-right:10px; */
+  margin-bottom: 5px;
   font-size: 17px;
+  text-align: center;
   position: relative;
   /* background-color: skyblue; */
   border-radius: 10px;
@@ -71,14 +72,14 @@ a {
   top: 0;
   width: 100%;
   height: 100%;
-  color: black;
+  color: b;
   text-decoration: none;
   line-height: 50px;
-  transition: 1s;
+  transition: 0.7s;
 }
 
 a:hover {
-  color: red;
+  color: black;
 }
 
 </style>

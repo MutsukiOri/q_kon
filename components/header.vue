@@ -14,5 +14,12 @@ a {
 a:hover{
     color: white;
 }
-
+.title {
+  display: block;
+  font-weight: 300;
+  font-size: 100px;
+  color: #35495e;
+  letter-spacing: 1px;
+}
 </style>
+

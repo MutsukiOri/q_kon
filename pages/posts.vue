@@ -6,7 +6,7 @@
     layout: 'tab',
     data () {
       return {
-        commments: "こんにちは"
+        comments: "こんにちは"
       }
     }
   }
