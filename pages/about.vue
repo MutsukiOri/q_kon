@@ -30,11 +30,13 @@
     /* display: flex; */
     justify-content: center;
     align-items: center;
-    text-align: center;
-    background-color: royalblue;
-    min-width: 200px;
+    text-align: left;
+    background-color: whitesmoke;
+}
+.container {
     max-width: 800px;
-
+    padding-bottom: 40px;
+    padding-top: 10px;
 }
 
 </style>

@@ -35,6 +35,7 @@
 
 .pages {
   padding: 3%;
+  margin: 0 auto;
 }
 
 .title {

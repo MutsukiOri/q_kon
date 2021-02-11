@@ -2,11 +2,11 @@
     <div class="container">
         
         <h5>九混について</h5>
-        <article>
+        <article class="art">
             <h6 class="summary">発足と現在</h6>
             <h6>{{ now }}</h6>
         </article>
-        <article>
+        <article class="art">
             <h6 class="summary">九混の活動</h6>
             <h6>{{ activity }}</h6>
         </article>
@@ -34,18 +34,11 @@ export default {
 }
 </script>
 <style scoped>
-.container {
-    background-color: rgb(230, 225, 252);
-    text-align: left;
-    /* margin-bottom: -8px; */
-    padding-top: 20px;
-    /* min-width: 360px; */
-}
 .summary {
     font-weight: bold;
 }
 article {
-    /* padding: 1%; */
+    padding-top: 15px;
     white-space: pre-line;
     background-color: silver;
 }

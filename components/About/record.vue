@@ -1,8 +1,8 @@
 <template>
     <div class="container">
         
-        <h5>活動実績</h5>
-        <div v-for="(year, index) in years" :key="index">
+        <h5 class="title">活動実績</h5>
+        <div class="art" v-for="(year, index) in years" :key="index">
             <h6 class="summary">{{ year.name }}</h6>
             <article v-for="(record, index) in year.records" :key="index">
                 <div class="record">
@@ -26,19 +26,13 @@ export default {
 }
 </script>
 <style scoped>
-.container {
-    background-color: rgb(230, 225, 252);
-    text-align: left;
-    /* margin-bottom: -8px; */
-    padding-top: 20px;
-    /* min-width: 360px; */
-}
 
-article {
-    /* padding: 1%; */
+
+.art {
+    padding-top: 15px;
     white-space: pre-line;
     background-color: silver;
-    padding-bottom: 10px;
+    /* margin-bottom: 10px; */
 }
 span {
     padding-left: 10px;
