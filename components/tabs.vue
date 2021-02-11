@@ -1,6 +1,6 @@
 <template>
-  <div>
-      <ol>
+  <div class="about">
+      <ol class="container">
         <li v-for="(menuItem, index) in menuItems" :key=index>
           <router-link v-bind:to=menuItem.url>
               {{ menuItem.name }}
@@ -40,22 +40,32 @@ export default {
 </script>
 
 <style scoped>
+.about {
+    margin: 0 auto;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    background-color: rgba(209, 89, 103, 0.833);
+    border-radius: 20px;
+}
 ol {
-  margin-top: -100px;
-  margin-left: 0%;
-  /* width: 1el; */
-  /* display:flex; */
+  /* margin: 0 auto; */
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  display:flex;
   list-style: none;
-  position: fixed;
   /* background-color: yellowgreen; */
-  /* padding-left: 100px; */
-  opacity: 0.99;
+  opacity: 1;
 }
 
 li {
-  width: 120px;
+  width: 100%;
+  max-width: 250px;
   height: 50px;
-  margin-bottom: 5px;
+  /* margin-bottom: 5px; */
+  margin-left: -30px;
   font-size: 17px;
   text-align: center;
   position: relative;
@@ -72,7 +82,7 @@ a {
   top: 0;
   width: 100%;
   height: 100%;
-  color: b;
+  color: white;
   text-decoration: none;
   line-height: 50px;
   transition: 0.7s;

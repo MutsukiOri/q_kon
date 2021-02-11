@@ -1,5 +1,5 @@
 <template>
-    <div class="container">
+    <div class="container" >
         
         <h5 class="title">活動実績</h5>
         <div class="art" v-for="(year, index) in years" :key="index">
@@ -31,7 +31,7 @@ export default {
 .art {
     padding-top: 15px;
     white-space: pre-line;
-    background-color: silver;
+    /* background-color: silver; */
     /* margin-bottom: 10px; */
 }
 span {

@@ -40,6 +40,6 @@ export default {
 article {
     padding-top: 15px;
     white-space: pre-line;
-    background-color: silver;
+    /* background-color: silver; */
 }
 </style>

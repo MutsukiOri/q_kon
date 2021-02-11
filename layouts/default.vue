@@ -29,13 +29,17 @@
 </script>
 <style scoped>
 .bg {
-  background-color: rgb(245, 199, 140);
+  background-color: rgba(242, 157, 115, 0.812);
   padding-bottom: 25px;
 }
 
 .pages {
-  padding: 3%;
+  padding: 0 3%;
   margin: 0 auto;
+}
+.tab {
+  padding-left: 3%;
+  padding-right: 3%;
 }
 
 .title {
@@ -52,7 +56,7 @@
 main {
 		min-height: 600px;
     /* min-width: 380px; */
-		background-color: turquoise;
+		/* background-color: turquoise; */
 		text-align: center;
 		padding: 30px;
 	}
