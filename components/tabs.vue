@@ -1,14 +1,23 @@
 <template>
-  <div class="about">
-      <ol class="container">
-        <li v-for="(menuItem, index) in menuItems" :key=index>
-          <router-link v-bind:to=menuItem.url>
-              {{ menuItem.name }}
-          </router-link>
-        </li>
-      </ol>
-  </div>
+  <v-tabs
+    v-model="tab"
+    background-color="red lighten-2"
+    dark
+    centered
+    grow
+    class="container"
+  >
+    <v-tab
+      v-for="(menuItem, index) in menuItems" 
+      :key=index
+    >
+      <router-link v-bind:to=menuItem.url>
+        {{ menuItem.name }}
+      </router-link>
+    </v-tab>
+  </v-tabs>
 </template>
+
 
 <script>
 
@@ -40,42 +49,9 @@ export default {
 </script>
 
 <style scoped>
-.about {
-    margin: 0 auto;
-    /* display: flex; */
-    justify-content: center;
-    align-items: center;
-    text-align: left;
-    background-color: rgba(209, 89, 103, 0.833);
-    border-radius: 20px;
+.container {
+  border-radius: 20px;
 }
-ol {
-  /* margin: 0 auto; */
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-  display:flex;
-  list-style: none;
-  /* background-color: yellowgreen; */
-  opacity: 1;
-}
-
-li {
-  width: 100%;
-  max-width: 250px;
-  height: 50px;
-  /* margin-bottom: 5px; */
-  margin-left: -30px;
-  font-size: 17px;
-  text-align: center;
-  position: relative;
-  /* background-color: skyblue; */
-  border-radius: 10px;
-  transition: 1s;
-}
-
-
-/*  router-linkがaタグとして表示されてたのでスタイルをaタグに書いた*/
 a {
   position: absolute;
   left: 0;
@@ -89,7 +65,9 @@ a {
 }
 
 a:hover {
-  color: black;
+  color: gray;
 }
+
+
 
 </style>

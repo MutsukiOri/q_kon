@@ -1,5 +1,5 @@
 <template>
-    <div class="container" >
+    <div>
         
         <h5 class="title">活動実績</h5>
         <div class="art" v-for="(year, index) in years" :key="index">

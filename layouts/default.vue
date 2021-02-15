@@ -1,17 +1,11 @@
 <template>
-	<div class="bg">
-    <div>
-      <Header />
-    </div>
-      <main>
-        <div class="tab">
-          <Tabs />
-        </div>
-        <div class="pages">
-          <Nuxt />
-        </div>
-      </main>
-	</div>
+	<v-app class="bg">
+      <Header/>
+    <v-main>
+        <Tabs />
+        <nuxt />
+    </v-main>
+  </v-app>
 </template>
 
 <script>
@@ -36,10 +30,6 @@
 .pages {
   padding: 0 3%;
   margin: 0 auto;
-}
-.tab {
-  padding-left: 3%;
-  padding-right: 3%;
 }
 
 .title {

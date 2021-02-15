@@ -1,6 +1,5 @@
 <template>
-    <div class="container">
-        
+    <div>
         <h5>九混について</h5>
         <article class="art">
             <h6 class="summary">発足と現在</h6>

@@ -1,20 +1,10 @@
 <template>
-    <div class="about">
-        <div>
-            <ol>
-                <li v-for="(menuItem, index) in menuItems" :key=index>
-                <nuxt-link v-scroll-to=menuItem.url to>
-                    {{ menuItem.name }}
-                </nuxt-link>
-                </li>
-            </ol>
-        </div>
+    <v-container>
         <Group id="group"/>
         <Record id="record"/>
         <Member id="member"/>
         <Advisor id="advisor"/>
-
-    </div>
+    </v-container>
 </template>
 
 <script>
@@ -56,7 +46,7 @@
 </script>
 
 <style scoped>
-.about {
+.container {
     margin: 0 auto;
     min-height: 100vh;
     /* display: flex; */
@@ -65,12 +55,7 @@
     text-align: left;
     background-color: whitesmoke;
     border-radius: 20px;
-    padding-top: 15px;
-}
-.container {
-    max-width: 800px;
-    padding-bottom: 40px;
-    padding-top: 10px;
+    /* padding-top: 15px; */
 }
 ol {
   /* margin-top: -100px; */

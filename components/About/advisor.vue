@@ -1,5 +1,5 @@
 <template>
-    <div class="container">
+    <div>
         <h5>音楽顧問の紹介</h5>
         <article class="art">
             <img src="./img/kosei.jpg">

@@ -8,6 +8,9 @@
       return {
         comments: "こんにちは"
       }
+    },
+    mounted () {
+      console.log("こんにちは");
     }
   }
 </script>
