@@ -37,7 +37,16 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/bootstrap
     'bootstrap-vue/nuxt',
+    ['nuxt-mq']
   ],
+  'mq': {
+    defaultBreakpoint: 'default',
+    breakpoints: {
+      sm: 600,
+      md: 1250,
+      lg: Infinity,
+    }
+  },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {

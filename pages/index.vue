@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div>
     <div>
       <h1 class="title">
         q_kon
@@ -33,15 +33,6 @@ export default {
 </script>
 
 <style scoped>
-.container {
-  margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  background-color: whitesmoke;
-}
 
 .title {
   font-family:

@@ -1,12 +1,24 @@
 <template>
-	<v-app class="bg">
-      <Header/>
+
+  <v-app>
+
+    <Header/>
+    <!-- アプリケーションのコンポーネントに基づいてコンテンツのサイズを決定 -->
     <v-main>
-        <Tabs />
+      <!-- アプリケーションに適切なgutterを提供します -->
+      <v-container fluid>
+        <!-- vue-routerを使用している場合 -->
         <nuxt />
+      </v-container>
     </v-main>
+
+    <v-footer app>
+      <!-- -->
+      <Footer/>
+    </v-footer>
   </v-app>
 </template>
+
 
 <script>
 	import Header from "@/components/header.vue"; // headerをインポート
@@ -22,41 +34,5 @@
 
 </script>
 <style scoped>
-.bg {
-  background-color: rgba(242, 157, 115, 0.812);
-  padding-bottom: 25px;
-}
 
-.pages {
-  padding: 0 3%;
-  margin: 0 auto;
-}
-
-.title {
-  font-family:
-  HiraKakuPro-W3, "ヒラギノ角ゴ Pro W3", メイリオ, "MS P ゴシック", verdana, sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
-}
-
-
-main {
-		min-height: 600px;
-    /* min-width: 380px; */
-		/* background-color: turquoise; */
-		text-align: center;
-		padding: 30px;
-	}
-	.page-enter-active,
-	.page-leave-active {
-		transition: 0.4s ;
-	}
-	.page-enter,
-	.page-leave-active {
-		opacity: 0;
-		transform: translate(0, 30px);
-	}
 </style>
