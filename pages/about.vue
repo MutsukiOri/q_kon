@@ -1,11 +1,67 @@
 <template>
-    <v-container>
-        <Group id="group"/>
+  <v-container>
+    <v-card>
+      <v-toolbar
+        flat
+        color="primary"
+        dark
+      >
+        <v-toolbar-title>About</v-toolbar-title>
+      </v-toolbar>
+      <v-tabs horizontal>
+        <v-tab>
+          <v-icon left>
+            mdi-account
+          </v-icon>
+          九混
+        </v-tab>
+        <v-tab>
+          <v-icon left>
+            mdi-lock
+          </v-icon>
+          活動実績
+        </v-tab>
+        <v-tab>
+          <v-icon left>
+            mdi-access-point
+          </v-icon>
+          団員紹介
+        </v-tab>
+        <v-tab>
+          <v-icon left>
+            mdi-access-point
+          </v-icon>
+          指導者紹介
+        </v-tab>
+
+        <v-tab-item>
+          <v-card flat>
+            <Group />
+          </v-card>
+        </v-tab-item>
+        <v-tab-item>
+          <v-card flat>
+            <Record />
+          </v-card>
+        </v-tab-item>
+        <v-tab-item>
+          <v-card flat>
+            <Member />
+          </v-card>
+        </v-tab-item>
+        <v-tab-item>
+          <v-card flat>
+            <Advisor />
+          </v-card>
+        </v-tab-item>
+      </v-tabs>
+    </v-card>
+  </v-container>
+</template>
+        <!-- <Group id="group"/>
         <Record id="record"/>
         <Member id="member"/>
-        <Advisor id="advisor"/>
-    </v-container>
-</template>
+        <Advisor id="advisor"/> -->
 
 <script>
     import Group from "@/components/About/group.vue";
@@ -23,7 +79,7 @@
     return {
       menuItems: [
       {
-        name: '九混??',
+        name: '九混について',
         url: '#group'
       },
       {
@@ -57,6 +113,7 @@
     border-radius: 20px;
     /* padding-top: 15px; */
 }
+
 ol {
   /* margin-top: -100px; */
   margin-left: 0%;

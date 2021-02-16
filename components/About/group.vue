@@ -1,5 +1,9 @@
 <template>
-    <div>
+    <v-sheet
+    color="white"
+    elevation="5"
+    outlined
+    shaped>
         <h5>九混について</h5>
         <article class="art">
             <h6 class="summary">発足と現在</h6>
@@ -9,7 +13,7 @@
             <h6 class="summary">九混の活動</h6>
             <h6>{{ activity }}</h6>
         </article>
-    </div>
+    </v-sheet>
 </template>
 
 <script>
@@ -40,5 +44,8 @@ article {
     padding-top: 15px;
     white-space: pre-line;
     /* background-color: silver; */
+}
+.sheet {
+  padding: 5%;
 }
 </style>

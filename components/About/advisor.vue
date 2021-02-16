@@ -1,5 +1,9 @@
 <template>
-    <div>
+    <v-sheet
+    color="white"
+    elevation="5"
+    outlined
+    rounded>
         <h5>音楽顧問の紹介</h5>
         <article class="art">
             <img src="./img/kosei.jpg">
@@ -8,7 +12,7 @@
                 <p>企画局長/ポンコツ</p>
             </div>
         </article>
-    </div>
+    </v-sheet>
 </template>
 
 <style scoped>

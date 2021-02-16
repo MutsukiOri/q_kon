@@ -1,6 +1,9 @@
 <template>
-    <div>
-        
+    <v-sheet
+    color="white"
+    elevation="5"
+    outlined
+    rounded>
         <h5 class="title">活動実績</h5>
         <div class="art" v-for="(year, index) in years" :key="index">
             <h6 class="summary">{{ year.name }}</h6>
@@ -12,7 +15,7 @@
                 </div>
             </article>
         </div>
-    </div>
+    </v-sheet>
 </template>
 
 <script>
