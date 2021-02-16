@@ -1,6 +1,6 @@
 <template>
   <v-container>
-    <v-card>
+    
       <v-toolbar
         flat
         color="primary"
@@ -55,7 +55,6 @@
           </v-card>
         </v-tab-item>
       </v-tabs>
-    </v-card>
   </v-container>
 </template>
         <!-- <Group id="group"/>

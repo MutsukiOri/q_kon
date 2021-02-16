@@ -1,6 +1,6 @@
 <template>
 
-  <v-app>
+  <v-app class="overflow-hidden">
 
     <Header/>
     <!-- アプリケーションのコンポーネントに基づいてコンテンツのサイズを決定 -->
