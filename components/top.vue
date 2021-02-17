@@ -1,6 +1,5 @@
 <template>
-    <v-card
-    mb-2>
+    <v-card>
     <v-img
         v-bind:src="imgPath"
         class="white--text align-end"

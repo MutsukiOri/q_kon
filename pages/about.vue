@@ -1,78 +1,51 @@
 <template>
-  <v-container>
-    
-      <v-toolbar
-        flat
-        color="primary"
-        dark
+  <v-container fluid>
+    <v-row>
+      <v-col
+      :cols=12
+      dense
+      class="pa-2"
       >
-        <v-toolbar-title>About</v-toolbar-title>
-      </v-toolbar>
-      <v-tabs horizontal>
-        <v-tab>
-          <v-icon left>
-            mdi-account
-          </v-icon>
-          九混
-        </v-tab>
-        <v-tab>
-          <v-icon left>
-            mdi-lock
-          </v-icon>
-          活動実績
-        </v-tab>
-        <v-tab>
-          <v-icon left>
-            mdi-access-point
-          </v-icon>
-          団員紹介
-        </v-tab>
-        <v-tab>
-          <v-icon left>
-            mdi-access-point
-          </v-icon>
-          指導者紹介
-        </v-tab>
-
-        <v-tab-item>
-          <v-card flat>
-            <Group />
-          </v-card>
-        </v-tab-item>
-        <v-tab-item>
-          <v-card flat>
-            <Record />
-          </v-card>
-        </v-tab-item>
-        <v-tab-item>
-          <v-card flat>
-            <Member />
-          </v-card>
-        </v-tab-item>
-        <v-tab-item>
-          <v-card flat>
-            <Advisor />
-          </v-card>
-        </v-tab-item>
-      </v-tabs>
+      <Top/>
+      </v-col>
+      <v-col
+      :cols=12
+      dense
+      class="pa-2"
+      >
+      <Record/>
+      </v-col>
+      <v-col
+      :cols=12
+      dense
+      class="pa-2"
+      >
+      <Member/>
+      </v-col>
+      <v-col
+      :cols=12
+      dense
+      class="pa-2"
+      >
+      <Advisor/>
+      </v-col>
+    </v-row>
   </v-container>
 </template>
-        <!-- <Group id="group"/>
-        <Record id="record"/>
-        <Member id="member"/>
-        <Advisor id="advisor"/> -->
 
 <script>
     import Group from "@/components/About/group.vue";
     import Record from "@/components/About/record.vue";
     import Member from "@/components/About/member.vue";
     import Advisor from "@/components/About/advisor.vue"
+    import Top from '../components/top.vue';
     export default {
         components: {
             Group,
             Record,
             Member,
-            Advisor
+            Advisor,
+                Top,
         },
         data () {
     return {

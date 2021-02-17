@@ -1,21 +1,33 @@
 <template>
-    <v-sheet
-    color="white"
-    elevation="5"
-    outlined
-    rounded>
-        <h5 class="title">活動実績</h5>
-        <div class="art" v-for="(year, index) in years" :key="index">
-            <h6 class="summary">{{ year.name }}</h6>
-            <article v-for="(record, index) in year.records" :key="index">
-                <div class="record">
+    <v-card
+    class="pb-2 justify-center">
+    <v-card-title>
+        活動実績
+    </v-card-title>
+        <v-timeline>
+            <v-timeline-item
+            v-for="(year, index) in years" 
+            :key="index"
+            large
+            >
+            <template v-slot:icon>
+                <v-avatar>
+                <img src="http://i.pravatar.cc/66">
+                </v-avatar>
+            </template>
+            <template v-slot:opposite>
+                <span>{{year.name}}</span>
+            </template>
+            <v-card class="elevation-2" >
+                <v-card-text v-for="(record, index) in year.records" :key="index">
                     <span class="date">{{record.date}}</span>
                     <span>{{ record.title }}</span>
                     <div class="place">{{record.place}}</div>
-                </div>
-            </article>
-        </div>
-    </v-sheet>
+                    </v-card-text>
+            </v-card>
+            </v-timeline-item>
+        </v-timeline>
+  </v-card>
 </template>
 
 <script>

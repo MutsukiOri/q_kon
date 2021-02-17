@@ -1,6 +1,6 @@
 <template>
     <v-card
-    pb-2>
+    class="pb-2">
     <v-img
         v-bind:src="imgPath"
         class="white--text justify-space-around"

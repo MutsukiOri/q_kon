@@ -34,7 +34,7 @@
 </template>
 
 <script>
-  import Top from '@/components/Index/top.vue';
+  import Top from '@/components/top.vue';
   import News from '@/components/Index/news.vue';
   import Plan from '@/components/Index/plan.vue';
   import Calender from '@/components/Index/calender.vue'
