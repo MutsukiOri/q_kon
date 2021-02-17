@@ -17,7 +17,7 @@
   export default {
     data(){
       return {
-        imgPath: require('@/components/Index/img/kosei.jpg'),
+        imgPath: 'https://picsum.photos/1920/1080?random',
         title: '九大混声合唱団',
         text: `　九大混声合唱団（九混）は、九州大学を拠点に活動している混声合唱サークルです。昭和38年(1963年)2月に発足し、今まで56年の歴史を歩んできました。
 

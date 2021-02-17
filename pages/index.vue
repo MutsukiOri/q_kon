@@ -20,14 +20,14 @@
           dense
           class="pa-2"
         >
-        <News/>
+        <Plan/>
         </v-col>
         <v-col
           :cols=12
           dense
           class="pa-2"
         >
-        <News/>
+        <Calender/>
         </v-col>
       </v-row>
     </v-container>
@@ -46,12 +46,7 @@
       Calender
     },
     data: () => ({
-      cards: [
-        { title: '九大混声合唱団', src: 'https://cdn.vuetifyjs.com/images/cards/house.jpg', flex: 8 },
-        { title: 'お知らせ', src: 'https://cdn.vuetifyjs.com/images/cards/road.jpg', flex: 4 },
-        { title: '練習予定', src: 'https://cdn.vuetifyjs.com/images/cards/plane.jpg', flex: 10 },
-        { title: 'カレンダー', src: require('@/components/Index/img/kosei.jpg'), flex: 10 },
-      ],
+
     }),
   }
 </script>
