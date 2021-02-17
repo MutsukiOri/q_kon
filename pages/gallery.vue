@@ -1,37 +1,50 @@
 <template>
-  <v-card class="overflow-hidden">
-    <v-app-bar
-      absolute
-      color="indigo darken-2"
-      dark
-      shrink-on-scroll
-      prominent
-      scroll-target="#scrolling-techniques"
-    >
-      <v-app-bar-nav-icon></v-app-bar-nav-icon>
-
-      <v-app-bar-title>Title</v-app-bar-title>
-
-      <v-spacer></v-spacer>
-
-      <v-btn icon>
-        <v-icon>mdi-magnify</v-icon>
-      </v-btn>
-
-      <v-btn icon>
-        <v-icon>mdi-heart</v-icon>
-      </v-btn>
-
-      <v-btn icon>
-        <v-icon>mdi-dots-vertical</v-icon>
-      </v-btn>
-    </v-app-bar>
-    <v-sheet
-      id="scrolling-techniques"
-      class="overflow-y-auto"
-      max-height="600"
-    >
-      <v-container style="height: 1000px;"></v-container>
-    </v-sheet>
-  </v-card>
+    <v-container fluid>
+      <v-row>
+        <v-col
+          v-for="card in cards"
+          :key="card.title"
+          :cols="card.flex"
+          dense
+          class="pl-2 pr-2"
+        >
+        <v-hover
+        v-slot="{ hover }"
+        >
+          <v-card
+          :elevation="hover ? 12 : 0">
+            <v-img
+              :src="card.src"
+              class="white--text align-end"
+              gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
+              height="200px"
+            >
+              <v-card-title v-text="card.title"></v-card-title>
+            </v-img>
+          </v-card>
+        </v-hover>
+        </v-col>
+      </v-row>
+    </v-container>
 </template>
+
+<script>
+  export default {
+    data: () => ({
+      cards: [
+        { title: '令和2年度', src: 'https://cdn.vuetifyjs.com/images/cards/house.jpg', flex: 8 },
+        { title: '令和元年度', src: 'https://cdn.vuetifyjs.com/images/cards/road.jpg', flex: 4 },
+        { title: '平成30年度', src: 'https://cdn.vuetifyjs.com/images/cards/plane.jpg', flex: 4 },
+        { title: '平成30年度', src: 'https://cdn.vuetifyjs.com/images/cards/plane.jpg', flex: 8 },
+        { title: '平成29年度', src: 'https://cdn.vuetifyjs.com/images/cards/plane.jpg', flex: 6 },
+        { title: '平成28年度', src: 'https://cdn.vuetifyjs.com/images/cards/plane.jpg', flex: 3 },
+        { title: '平成27年度', src: 'https://cdn.vuetifyjs.com/images/cards/plane.jpg', flex: 3 },
+      ],
+    }),
+  }
+</script>
+
+<style scoped>
+
+
+</style>

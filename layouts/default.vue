@@ -3,9 +3,7 @@
   <v-app class="overflow-hidden">
     <Header/>
     <v-main>
-      <v-container fluid>
         <nuxt />
-      </v-container>
     </v-main>
 
     <v-footer>
