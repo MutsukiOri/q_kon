@@ -1,7 +1,8 @@
 <template>
     <v-card>
-        <v-container fluid>
-        <v-row>
+        <v-container >
+            <v-card-title>団員紹介</v-card-title>
+        <v-row >
             <v-col
             v-for="card in cards"
             :key="card.title"
@@ -17,10 +18,12 @@
                 <v-img
                 :src="card.src"
                 class="white--text align-end"
-                gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
+                gradient="to bottom, rgba(0,0,0,.5), rgba(80,50,100,.5)"
                 height="200px"
                 >
-                <v-card-title v-text="card.title"></v-card-title>
+                <v-card-title 
+                v-text="card.title">
+                </v-card-title>
                 </v-img>
             </v-card>
             </v-hover>

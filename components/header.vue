@@ -6,7 +6,6 @@
       hide-on-scroll
       prominent
       src="https://picsum.photos/1920/1080?random"
-      fade-img-on-scroll
       scroll-target="#scrolling-techniques-3"
     >
       <template v-slot:img="{ props }">
