@@ -3,13 +3,15 @@
     <v-img
         v-bind:src="imgPath"
         class="white--text align-end"
-        gradient="to bottom, rgba(111,300,220,.7), rgba(111,30,220,.1)"
+        gradient="to bottom, rgba(111,30,220,.1), rgba(1,3,20,.7)"
         height="300"
     >
+      <v-container>
         <v-card-title v-text="title"></v-card-title>
         <v-card-text
         style="white-space:pre-wrap; word-wrap:break-word;"
         v-text="text"></v-card-text>
+      </v-container>
     </v-img>
     </v-card>
 </template>

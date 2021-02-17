@@ -1,12 +1,12 @@
 <template>
-    <v-card
-    pb-2>
+    <v-card>
     <v-img
         v-bind:src="imgPath"
-        class="white--text justify-space-around"
+        class="white--text align-end"
         gradient="to bottom, rgba(10,0,0,.1), rgba(0,0,0,.5)"
         max-height="350"
     >
+        <v-container>
         <v-card-title v-text="title"></v-card-title>
         <v-card-text>
 
@@ -16,7 +16,6 @@
         <v-card-text v-text="place"></v-card-text>
 
         </v-card-text>
-        <v-container>
         </v-container>
     </v-img>
     </v-card>

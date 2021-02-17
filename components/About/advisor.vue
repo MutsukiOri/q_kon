@@ -26,8 +26,6 @@
               </v-expansion-panel-content>
             </v-expansion-panel>
           </v-expansion-panels>
-
-
         </v-col>
       </v-row>
     </v-container>

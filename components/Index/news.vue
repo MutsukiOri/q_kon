@@ -1,14 +1,14 @@
 <template>
-    <v-card
-    class="pb-2">
+    <v-card>
     <v-img
         v-bind:src="imgPath"
         class="white--text justify-space-around"
         gradient="to bottom, rgba(10,0,0,.1), rgba(0,0,0,.5)"
         height="450"
     >
-        <v-card-title v-text="title"></v-card-title>
         <v-container>
+          <v-card-title v-text="title">
+          </v-card-title>
             <v-card>
             <v-virtual-scroll
             :bench="benched"
