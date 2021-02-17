@@ -5,7 +5,7 @@
         v-bind:src="imgPath"
         class="white--text justify-space-around"
         gradient="to bottom, rgba(10,0,0,.1), rgba(0,0,0,.5)"
-        height="600"
+        height="250"
     >
         <v-card-title v-text="title"></v-card-title>
         <v-card-text>

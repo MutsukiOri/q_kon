@@ -3,8 +3,8 @@
     <v-img
         v-bind:src="imgPath"
         class="white--text align-end"
-        gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
-        height="600"
+        gradient="to bottom, rgba(111,300,220,.7), rgba(111,30,220,.1)"
+        height="300"
     >
         <v-card-title v-text="title"></v-card-title>
         <v-card-text v-text="text"></v-card-text>

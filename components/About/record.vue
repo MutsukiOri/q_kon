@@ -1,32 +1,53 @@
 <template>
     <v-card
-    class="pb-2 justify-center">
+    class=" justify-center"
+    >
+    <v-img
+        v-bind:src="imgPath"
+        class="white--text align-end"
+        gradient="to bottom, rgba(10,10,100,.6), rgba(120,230,10,.5)"
+    >
+    <v-container>
     <v-card-title>
         活動実績
     </v-card-title>
-        <v-timeline>
+        <v-timeline
+        dense>
             <v-timeline-item
             v-for="(year, index) in years" 
             :key="index"
             large
             >
             <template v-slot:icon>
-                <v-avatar>
-                <img src="http://i.pravatar.cc/66">
+                <v-avatar size='50px' color='indigo'>
+                    {{year.name}}
                 </v-avatar>
             </template>
-            <template v-slot:opposite>
-                <span>{{year.name}}</span>
-            </template>
             <v-card class="elevation-2" >
-                <v-card-text v-for="(record, index) in year.records" :key="index">
-                    <span class="date">{{record.date}}</span>
-                    <span>{{ record.title }}</span>
-                    <div class="place">{{record.place}}</div>
-                    </v-card-text>
+                <v-card-text>
+                    <v-row
+                    v-for="(record, index) in year.records" 
+                    :key="index">
+                        <v-sheet
+                        width='100%'
+                        dence
+                        outlined>
+                        <v-row
+                        justify="center"
+                        no-gutters>
+                        <v-col cols="12" md="2" class="date">{{record.date}}</v-col>
+                        <v-col cols="10" ><strong>{{ record.title }}</strong></v-col>
+                        <v-col cols="8">{{record.place}}</v-col>
+                        </v-row>
+                        </v-sheet>
+                    </v-row>
+                    
+                </v-card-text>
             </v-card>
             </v-timeline-item>
         </v-timeline>
+    </v-container>
+    </v-img>
   </v-card>
 </template>
 
@@ -35,32 +56,9 @@ import Records from './records'
 export default {
     data () {
       return {
-          years: Records.years
+          years: Records.years,
+          imgPath: 'https://picsum.photos/1920/1080?random',
         }
     }
 }
 </script>
-<style scoped>
-
-
-.art {
-    padding-top: 15px;
-    white-space: pre-line;
-    /* background-color: silver; */
-    /* margin-bottom: 10px; */
-}
-span {
-    padding-left: 10px;
-}
-.summary {
-    font-weight: bold;
-}
-
-.date {
-    font-size: 14px;
-}
-.place {
-    font-size: 14px;
-    text-align: center;
-}
-</style>
