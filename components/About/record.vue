@@ -1,6 +1,7 @@
 <template>
     <v-card
     class=" justify-center"
+    
     >
     <v-img
         v-bind:src="imgPath"
@@ -12,7 +13,9 @@
         活動実績
     </v-card-title>
         <v-timeline
-        dense>
+        dense
+        max-width="500px"
+        >
             <v-timeline-item
             v-for="(year, index) in years" 
             :key="index"
