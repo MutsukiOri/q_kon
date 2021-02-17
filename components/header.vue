@@ -25,7 +25,7 @@
     >
       <v-list
         nav
-        dense
+        
       >
         <v-list-item-group
           v-model="group"
@@ -33,7 +33,9 @@
           v-for="(menuItem, index) in menuItems" 
           :key=index
         >
-          <v-list-item v-bind:to=menuItem.url>
+          <v-list-item
+          v-bind:to=menuItem.url
+          class="button">
             <v-list-item-icon>
               <v-icon>{{ menuItem.icon }}</v-icon>
             </v-list-item-icon>
