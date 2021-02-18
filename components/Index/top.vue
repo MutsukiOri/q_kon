@@ -2,18 +2,26 @@
   <v-card>
     <v-img
         v-bind:src="imgPath"
-        class="white--text align-end"
+        class="white--text align-center"
         gradient="to bottom, rgba(111,30,220,.1), rgba(1,3,20,.7)"
         height="400"
       >
       <v-container>
+        <v-card-title v-text="title"></v-card-title>
+        <v-card-text
+        style="white-space:pre-wrap; word-wrap:break-word;"
+        v-text="text">
+        </v-card-text>
+        <v-row><!-- 位置調整 -->
+          <v-col></v-col>
+        </v-row>
         <v-row>
           <v-col
           align="center"
           justify="space-around"
           v-for="(buttonItem, index) in buttonItems" 
           :key=index
-          cols="4">
+          >
             <v-btn
             outlined
             color="white"
@@ -24,11 +32,7 @@
             </v-btn>
           </v-col>
         </v-row>
-        <v-card-title v-text="title"></v-card-title>
-        <v-card-text
-        style="white-space:pre-wrap; word-wrap:break-word;"
-        v-text="text">
-        </v-card-text>
+        
       </v-container>
     </v-img>
   </v-card>
@@ -45,11 +49,11 @@
         buttonItems: [
           {
             title: ' お知らせ',
-            icon: 'mdi-at',
+            icon: 'mdi-newspaper-variant-outline',
             target: '#news',
           },
           {
-            title: ' 練習について',
+            title: ' 練習',
             icon: 'mdi-account-voice',
             target: '#plan',
           },
@@ -59,13 +63,7 @@
             target: '#calendar',
           },
         ],
-        selections: '#first',
     }
-  },
-    computed: {
-      target() {
-        return this.selections
-      }
-    }
+  }
   }
 </script>

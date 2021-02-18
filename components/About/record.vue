@@ -1,7 +1,7 @@
 <template>
     <v-card
     class=" justify-center"
-    
+    id="record"
     >
     <v-img
         v-bind:src="imgPath"

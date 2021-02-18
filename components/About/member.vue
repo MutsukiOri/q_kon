@@ -1,5 +1,5 @@
 <template>
-    <v-card>
+    <v-card id="member">
         <v-container fluid>
             <v-card-title>団員紹介</v-card-title>
         <v-row >

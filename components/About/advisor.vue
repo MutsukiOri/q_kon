@@ -1,5 +1,5 @@
 <template>
-  <v-card>
+  <v-card id="advisor">
     <v-container fluid>
       <v-card-title>
         指導者紹介

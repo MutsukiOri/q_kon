@@ -1,25 +1,38 @@
 <template>
-    <v-card>
+  <v-card>
     <v-img
         v-bind:src="imgPath"
-        class="white--text align-end"
+        class="white--text align-center"
         gradient="to bottom, rgba(111,30,220,.1), rgba(1,3,20,.7)"
-        height="300"
-    >
+        height="400"
+      >
       <v-container>
-        <v-btn 
-        class="ma-2" 
-        outlined 
-        color="white"
-        @click="$vuetify.goTo(565)"
-        >Outlined Button</v-btn>
         <v-card-title v-text="title"></v-card-title>
         <v-card-text
         style="white-space:pre-wrap; word-wrap:break-word;"
-        v-text="text"></v-card-text>
+        v-text="text">
+        </v-card-text>
+        <v-row>
+          <v-col cols="12"></v-col>
+          <v-col
+          align="center"
+          justify="space-around"
+          v-for="(buttonItem, index) in buttonItems" 
+          :key=index
+          >
+            <v-btn
+            outlined
+            color="white"
+            v-scroll-to=buttonItem.target
+            >
+              <v-icon>{{ buttonItem.icon }}</v-icon>
+              {{ buttonItem.title }}
+            </v-btn>
+          </v-col>
+        </v-row>
       </v-container>
     </v-img>
-    </v-card>
+  </v-card>
 </template>
 
 <script>
@@ -27,10 +40,26 @@
     data(){
       return {
         imgPath: 'https://picsum.photos/1920/1080?random',
-        title: '九大混声合唱団',
-        text: `　九大混声合唱団（九混）は、九州大学を拠点に活動している混声合唱サークルです。昭和38年(1963年)2月に発足し、今まで56年の歴史を歩んできました。
-　団員は九州大学の学生が主ですが、他大学や専門学校の学生も入団できます。 現在は中村学園大学、筑紫女学園大学の仲間がおり、約60人で活動しています。（2021年2月現在）`
-      }
+        title: '発声あるある',
+        text: `一番大事`,
+        buttonItems: [
+          {
+            title: '活動実績',
+            icon: 'mdi-history',
+            target: '#record',
+          },
+          {
+            title: '団員紹介',
+            icon: 'mdi-card-account-details-outline',
+            target: '#member',
+          },
+          {
+            title: '指導者紹介',
+            icon: 'mdi-account-check-outline',
+            target: '#advisor',
+          },
+        ],
     }
+  }
   }
 </script>

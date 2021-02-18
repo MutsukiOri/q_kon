@@ -34,7 +34,7 @@
 </template>
 
 <script>
-import Top from '@/components/top.vue';
+import Top from '@/components/Info/top.vue';
 import SNS from '@/components/Info/sns.vue';
 import Concert from '@/components/Info/concert.vue';
 import Obog from '../components/Info/obog.vue';
