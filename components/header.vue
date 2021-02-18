@@ -3,8 +3,8 @@
       app
       absolute
       dark
-      hide-on-scroll
-      prominent
+      shrink-on-scroll
+      
       src="https://picsum.photos/1920/1080?random"
       scroll-target="#scrolling-techniques-3"
     >
