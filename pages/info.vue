@@ -20,14 +20,14 @@
           dense
           class="pa-2"
         >
-        
+        <Concert />
         </v-col>
         <v-col
           :cols=12
           dense
           class="pa-2"
-        >
-        
+          >
+          <obog/>
         </v-col>
       </v-row>
     </v-container>
@@ -35,11 +35,15 @@
 
 <script>
 import Top from '@/components/top.vue';
-import SNS from '@/components/Info/sns.vue'
+import SNS from '@/components/Info/sns.vue';
+import Concert from '@/components/Info/concert.vue';
+import Obog from '../components/Info/obog.vue';
 export default {
     components: {
         Top,
-        SNS
+        SNS,
+        Concert,
+        Obog,
     }
 }
 </script>

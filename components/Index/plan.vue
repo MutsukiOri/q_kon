@@ -1,5 +1,5 @@
 <template>
-    <v-card>
+    <v-card id="plan">
     <v-img
         v-bind:src="imgPath"
         class="white--text align-end"

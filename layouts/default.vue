@@ -1,6 +1,7 @@
 <template>
 
   <v-app class="overflow-hidden">
+    <v-card>
     <Header/>
     <v-main>
         <nuxt />
@@ -9,6 +10,7 @@
     <v-footer>
       <Footer/>
     </v-footer>
+    </v-card>
   </v-app>
 </template>
 

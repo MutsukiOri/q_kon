@@ -3,6 +3,6 @@ import VueScrollTo from 'vue-scrollto'
 
 Vue.use(VueScrollTo, {
  duration: 700,
- easing: [0, 0, 0.1, 1],
- offset: -100,
+ easing: [0.25, 0.1, 0.25, 1],
+ offset: -50,
 })

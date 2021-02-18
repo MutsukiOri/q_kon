@@ -1,5 +1,5 @@
 <template>
-    <v-card>
+    <v-card id="news">
     <v-img
         v-bind:src="imgPath"
         class="white--text justify-space-around"

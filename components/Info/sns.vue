@@ -54,7 +54,7 @@
               <a href="https://lin.ee/dU8HLze"><img src="https://scdn.line-apps.com/n/line_add_friends/btn/ja.png" alt="友だち追加" height="36" border="0"></a>
               </v-card-title>
               <v-card-text>
-                公式アカウント「九混新歓」
+                Line公式アカウント「九混新歓」
                 九混の新歓情報をお届けします。
                 サークルの活動内容、履修の質問や相談、なんでも受け付けております。
               </v-card-text>
@@ -81,7 +81,6 @@
 
 <script>
 import { Timeline } from "vue-tweet-embed";
-// import {VueInstagram} from "vue-instagram"
 
 export default {
   components: {
@@ -93,10 +92,5 @@ export default {
       imgPath: 'https://picsum.photos/1920/1080?random',
   }
   },
-  mounted () {
-    const script = document.createElement('script')
-    script.src = '//www.instagram.com/embed.js'
-    this.$el.appendChild(script)
-  }
 }
 </script>

@@ -1,5 +1,5 @@
 <template>
-    <v-card>
+    <v-card id="calendar">
     <v-img
         :src="imgPath"
         class="white--text align-start"
