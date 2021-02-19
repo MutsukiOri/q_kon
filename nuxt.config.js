@@ -50,5 +50,10 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
+  },
+  // deploy router base
+  target: 'static',
+  router: {
+    base: '/<repository-name>/'
   }
 }
