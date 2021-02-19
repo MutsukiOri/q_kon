@@ -57,6 +57,6 @@ export default {
   // deploy router base
   target: 'static',
   router: {
-    base: '/<repository-name>/'
+    base: '/q_kon/'
   }
 }

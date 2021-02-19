@@ -24,7 +24,6 @@
     >
       <v-list
         nav
-        
       >
         <v-list-item-group
           v-model="group"
