@@ -11,7 +11,7 @@ export default {
       { hid: 'description', name: 'description', content: '' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/q_kon/favicon.ico' }
     ]
   },
 
@@ -24,6 +24,9 @@ export default {
     '~plugins/vue-scrollto'
     
   ],
+  router: {
+    base: '/q_kon/'
+  },
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
