@@ -2,7 +2,7 @@
     <v-card id="plan">
     <v-img
         v-bind:src="imgPath"
-        class="white--text align-end"
+        class="white--text align-center"
         gradient="to bottom, rgba(10,0,0,.1), rgba(0,0,0,.5)"
         max-height="350"
     >
