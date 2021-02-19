@@ -38,7 +38,7 @@
     import Record from "@/components/About/record.vue";
     import Member from "@/components/About/member.vue";
     import Advisor from "@/components/About/advisor.vue"
-    import Top from '../components/About/top.vue';
+    import Top from '../components/About/abouttop.vue';
     export default {
         components: {
             Group,
