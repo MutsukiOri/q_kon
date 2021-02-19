@@ -43,7 +43,7 @@ export default {
             advisors: [
                 { 
                   name: '竹田享司  Takeda  Kyoji',
-                  src: 'http://qkon-chorus.sakura.ne.jp/images/instructor/Takeda.jpg',
+                  src: require('~/assets/advisor/Takeda.jpg'),
                   role: `
                         指揮者／音楽・技術顧問`,
                   more:`
@@ -57,7 +57,7 @@ export default {
                 },
                 {
                   name: '山口幸志 Yamaguchi Koji',
-                  src: 'http://qkon-chorus.sakura.ne.jp/images/instructor/Yamaguchi.jpg',
+                  src: require('~/assets/advisor/Yamaguchi.jpg'),
                   role: `
                   ヴォイストレーナー/テノール`,
                   more: `
@@ -69,7 +69,7 @@ export default {
 
                 {
                   name: '永石伸子 Nagaishi Nobuko',
-                  src: 'http://qkon-chorus.sakura.ne.jp/images/instructor/Nagaishi.jpg',
+                  src: require('~/assets/advisor/Nagaishi.jpg'),
                   role: `
                   ヴォイストレーナー/ソプラノ`,
                   more: `
