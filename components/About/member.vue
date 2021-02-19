@@ -1,46 +1,51 @@
 <template>
-    <v-card id="member">
-        <v-container fluid>
-            <v-card-title>団員紹介</v-card-title>
-        <v-row >
-            <v-col
-            v-for="card in cards"
-            :key="card.title"
-            :cols="card.flex"
-            dense
-            class="pl-2 pr-2"
-            >
-            <v-hover
-            v-slot="{ hover }"
-            >
-            <v-card
-            :elevation="hover ? 12 : 0">
-                <v-img
-                :src="card.src"
-                class="white--text align-end"
-                gradient="to bottom, rgba(0,0,0,.5), rgba(80,50,100,.5)"
-                height="200px"
-                >
-                <v-card-title 
-                v-text="card.title">
-                </v-card-title>
-                </v-img>
-            </v-card>
-            </v-hover>
-            </v-col>
-        </v-row>
-        </v-container>
-    </v-card>
+  <v-card id="member">
+    <v-container>
+      <v-card-title>
+        団員紹介
+      </v-card-title>
+      <v-row>
+        <v-col
+          v-for="card in cards"
+          :key="card"
+          class="d-flex child-flex"
+          cols="12"
+          md="6"
+          lg="3"
+        >
+          <v-img
+            :src=card.src
+            :lazy-src=card.src
+            
+            class="grey lighten-2"
+          >
+            <template v-slot:placeholder>
+              <v-row
+                class="fill-height ma-0"
+                align="center"
+                justify="center"
+              >
+                <v-progress-circular
+                  indeterminate
+                  color="grey lighten-5"
+                ></v-progress-circular>
+              </v-row>
+            </template>
+          </v-img>
+        </v-col>
+      </v-row>
+    </v-container>
+  </v-card>
 </template>
 
 <script>
   export default {
     data: () => ({
       cards: [
-        { title: 'ソプラノ', src: 'https://cdn.vuetifyjs.com/images/cards/house.jpg', flex: 8 },
-        { title: 'アルト', src: 'https://cdn.vuetifyjs.com/images/cards/road.jpg', flex: 4 },
-        { title: 'テノール', src: 'https://cdn.vuetifyjs.com/images/cards/plane.jpg', flex: 4 },
-        { title: 'ベース', src: 'https://cdn.vuetifyjs.com/images/cards/plane.jpg', flex: 8 },
+        { title: 'ソプラノ', src: require('~/assets/member/sop2019.jpg') },
+        { title: 'アルト', src: require('~/assets/member/alt2019.jpg') },
+        { title: 'テノール', src: require('~/assets/member/tenor2019.jpg') },
+        { title: 'ベース', src: require('~/assets/member/bass2019.jpg') },
       ],
     }),
   }
