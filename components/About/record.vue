@@ -5,7 +5,7 @@
     >
     <v-img
         v-bind:src="imgPath"
-        class="white--text align-end"
+        class="white--text align-start"
         gradient="to bottom, rgba(10,10,100,.6), rgba(120,230,10,.5)"
     >
     <v-container>
@@ -14,12 +14,14 @@
     </v-card-title>
         <v-timeline
         dense
+        reverse
         max-width="500px"
         >
             <v-timeline-item
             v-for="(year, index) in years" 
             :key="index"
-            large
+            left
+            
             >
             <template v-slot:icon>
                 <v-avatar size='50px' color='indigo'>
