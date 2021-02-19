@@ -1,10 +1,11 @@
 <template>
     <v-app-bar
       app
-      absolute
       dark
-      shrink-on-scroll
+      absolute
+      prominent
       
+      elevate-on-scroll
       src="https://picsum.photos/1920/1080?random"
       scroll-target="#scrolling-techniques-3"
     >
@@ -16,11 +17,15 @@
       </template>
 
     <mq-layout mq='sm'>
-      <v-app-bar-nav-icon @click="drawer = true"></v-app-bar-nav-icon>
+      <v-app-bar-nav-icon @click="drawer = true">
+      </v-app-bar-nav-icon>
           <v-navigation-drawer
-      v-model="drawer"
-      absolute
-      temporary
+          app
+          v-model="drawer"
+          absolute
+          temporary
+          floating
+          color="rgba(0,0,0,0.8)"
     >
       <v-list
         nav
