@@ -21,6 +21,7 @@
           :key=index
           >
             <v-btn
+            rounded
             outlined
             color="white"
             v-scroll-to=buttonItem.target

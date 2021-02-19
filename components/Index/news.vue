@@ -2,9 +2,9 @@
     <v-card id="news">
     <v-img
         v-bind:src="imgPath"
-        class="white--text justify-space-around"
+        class="white--text align-center"
         gradient="to bottom, rgba(10,0,0,.1), rgba(0,0,0,.5)"
-        height="450"
+        
     >
         <v-container>
           <v-card-title v-text="title">
@@ -13,19 +13,37 @@
             <v-virtual-scroll
             :bench="benched"
             :items="items"
-            height="300"
-            item-height="64"
+            height="600"
+            item-height="200"
             color='primary'
+            
             >
-            <template v-slot:default="{ item }">
+            <template 
+            class="align-end"
+            v-slot:default="{ item }"
+            >
+              <v-divider></v-divider>
                 <v-list-item :key="item">
                     <v-list-item-content>
-                        <v-list-item-title>
-                            User Database Record <strong>ID {{ item }}</strong>
-                        </v-list-item-title>
+                        <v-list-item-subtitle class="text-align:">
+                            {{item.date}}
+                        </v-list-item-subtitle>
                     </v-list-item-content>
                 </v-list-item>
-                <v-divider></v-divider>
+                <v-list-item :key="item">
+                    <v-list-item-content>
+                        <v-list-item-title class="text-align:">
+                            <strong>{{ item.title}}</strong>
+                        </v-list-item-title>
+                        <v-list-item-subtitle 
+                        
+                        style="white-space:pre-wrap; word-wrap:break-word;">
+                          {{ item.text }}
+                        </v-list-item-subtitle>
+                    </v-list-item-content>
+                </v-list-item>
+                
+
             </template>
             </v-virtual-scroll>
             </v-card>
@@ -35,18 +53,33 @@
 </template>
 
 <script>
+import News from './news'
   export default {
     data: () => ({
         imgPath: 'https://cdn.vuetifyjs.com/images/cards/house.jpg',
         title: 'お知らせ',
-        benched: 0,
+        benched: 5,
+        dates: News.dates,
+        titles: News.titles,
+        texts: News.texts,
+        
     }),
     computed: {
       items () {
-        return Array.from({ length: this.length }, (k, v) => v + 1)
-      },
-      length () {
-        return 70
+        const length = this.dates.length
+        return Array.from({ length: length }, (k, v) => {
+          const date = this.dates[v]
+          const title = this.titles[v]
+          const text = this.texts[v]
+
+          return {
+            date: `${date}`,
+            title: `${title}`,
+            text: `${text}`
+            
+          }
+      }
+        ) 
       },
     },
   }
