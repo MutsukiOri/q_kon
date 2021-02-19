@@ -12,7 +12,7 @@
             color='rgba(0, 0, 0, 0)'
             dark
             flat>
-                <v-card-title>日頃の感謝</v-card-title>
+                
                 <v-card-text v-text="thanks"></v-card-text>
             </v-card>
             <v-card
@@ -30,7 +30,7 @@
                 color='rgba(0, 0, 0, 0)'
                 dark
                 flat>
-                    <v-card-title>変更の届け出</v-card-title>
+                    <v-card-title large>変更の届け出</v-card-title>
                     <v-card-text v-text="address"></v-card-text>
                     <v-card-text v-text="mail"></v-card-text>
                 </v-card>

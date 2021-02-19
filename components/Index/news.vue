@@ -10,42 +10,40 @@
           <v-card-title v-text="title">
           </v-card-title>
             <v-card>
+              <v-container>
             <v-virtual-scroll
             :bench="benched"
             :items="items"
             height="600"
-            item-height="200"
+            item-height="600"
             color='primary'
             
             >
             <template 
-            class="align-end"
+            class="pa-6"
             v-slot:default="{ item }"
             >
               <v-divider></v-divider>
-                <v-list-item :key="item">
-                    <v-list-item-content>
-                        <v-list-item-subtitle class="text-align:">
-                            {{item.date}}
-                        </v-list-item-subtitle>
-                    </v-list-item-content>
-                </v-list-item>
-                <v-list-item :key="item">
-                    <v-list-item-content>
-                        <v-list-item-title class="text-align:">
-                            <strong>{{ item.title}}</strong>
-                        </v-list-item-title>
-                        <v-list-item-subtitle 
-                        
-                        style="white-space:pre-wrap; word-wrap:break-word;">
-                          {{ item.text }}
-                        </v-list-item-subtitle>
-                    </v-list-item-content>
-                </v-list-item>
+                <v-row >
+                  
+                  
+                  <v-col
+                  cols=12
+                  class="text-center"
+                  >
+                  {{item.date}}
+                  <strong>{{item.title}}</strong>
+                  </v-col>
+                  <v-col cols=12>
+                  {{item.text}}
+                  </v-col>
+                  
+                </v-row>
                 
 
             </template>
             </v-virtual-scroll>
+            </v-container>
             </v-card>
         </v-container>
     </v-img>
