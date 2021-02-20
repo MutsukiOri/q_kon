@@ -4,7 +4,7 @@
         v-bind:src="imgPath"
         class="white--text align-center"
         gradient="to bottom, rgba(10,0,0,.1), rgba(0,0,0,.5)"
-        max-height="350"
+        max-height="400"
     >
         <v-container>
         <v-card-title v-text="title"></v-card-title>
