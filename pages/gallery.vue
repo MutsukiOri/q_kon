@@ -14,12 +14,15 @@
           <v-card
           :elevation="hover ? 12 : 0">
             <v-img
+              
               :src="card.src"
               class="white--text align-end"
               gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
               height="200px"
             >
               <v-card-title v-text="card.title"></v-card-title>
+              <a class="col-6 col-md-4" href="../assets/images/R1/10-1.jpg"><img class="img-thumbnail"
+                                src="../assets/images/R2/10-1.jpg"></a>
             </v-img>
           </v-card>
         </v-hover>
