@@ -3,10 +3,10 @@
       <v-col cols="12">
         <v-divider></v-divider>
       </v-col>
-      <v-col cols="2">
+      <v-col cols="12" md="2">
       {{ source.date }}
       </v-col>
-      <v-col cols=10>
+      <v-col cols=12 md="10">
         {{ source.text }}
       </v-col>
       
