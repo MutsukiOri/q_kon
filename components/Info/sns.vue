@@ -92,5 +92,10 @@ export default {
       imgPath: 'https://picsum.photos/1920/1080?random',
   }
   },
+  mounted () {
+    const script = document.createElement('script')
+    script.src = '//www.instagram.com/embed.js'
+    this.$el.appendChild(script)
+  }
 }
 </script>
