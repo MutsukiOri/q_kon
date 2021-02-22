@@ -46,7 +46,7 @@ import VirtualList from 'vue-virtual-scroll-list'
   export default {
     components: { 'virtual-list': VirtualList },
     data: () => ({
-        imgPath: 'https://cdn.vuetifyjs.com/images/cards/house.jpg',
+        imgPath: 'https://picsum.photos/1920/1080?random',
         title: 'お知らせ',
         renews: Renews.renews,
         news: News.newspapers,

@@ -40,7 +40,7 @@
   export default {
     data(){
       return {
-        imgPath: 'https://picsum.photos/1920/1080?random',
+        imgPath: require('~/assets/images/2020boy.jpg'),
         title: '発声あるある',
         text: `一番大事`,
         buttonItems: [

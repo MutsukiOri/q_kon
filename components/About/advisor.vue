@@ -1,5 +1,10 @@
 <template>
   <v-card id="advisor">
+    <v-img
+    v-bind:src="imgPath"
+    class="white--text align-center"
+    gradient="to bottom, rgba(10,0,0,.1), rgba(0,0,0,.5)"
+    >
     <v-container fluid>
       <v-card-title>
         指導者紹介
@@ -13,9 +18,7 @@
         sm="4"
         >
 
-          <v-expansion-panels
-          hover
-          popout>
+          <v-expansion-panels focusable>
             <v-expansion-panel>
               <v-expansion-panel-header>
                 <v-img
@@ -46,6 +49,7 @@
         </v-col>
       </v-row>
     </v-container>
+    </v-img>
   </v-card>
 </template>
 
@@ -91,7 +95,8 @@ export default {
 　2013年からCANTIAMO INSIEME演奏会に広島・福岡で出演。現在、コーロ・エテルノ指揮者、佐世保・福岡において演奏活動他、合唱団等のヴォイストレーナー、及び後進の指導を行っている。
 　佐世保市音楽協会会員。佐世保出身。`
                   }
-            ]
+            ],
+            imgPath: require('~/assets/images/shiiki.jpg')
         }
     }
 }
