@@ -1,13 +1,15 @@
 <template>
   <v-row>
-      <v-col>
-      {{ source.date }} - 
-      <strong>{{ source.title }}</strong>
-      </v-col>
-      <v-col cols=12>
-        {{ source.text }}
+      <v-col cols="12">
         <v-divider></v-divider>
       </v-col>
+      <v-col cols="2">
+      {{ source.date }}
+      </v-col>
+      <v-col cols=10>
+        {{ source.text }}
+      </v-col>
+      
   </v-row>
 </template>
  

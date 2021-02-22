@@ -8,29 +8,30 @@
     >
     <v-container>
       <v-card-title v-text="title"/>
+      <v-col>
         <v-card>
           <v-container>
-            <v-card-title height=50>更新情報</v-card-title>
+            <v-card-title>更新情報</v-card-title>
             <virtual-list  style="height: 200px; overflow-y: auto;"
             :data-key="'date'"
             :data-sources="renews"
-            :data-component="itemComponent"
+            :data-component="renewsComponent"
             />
           </v-container>
         </v-card>
-        <v-row>
-          <v-col></v-col>
-        </v-row>
+      </v-col>
+      <v-col>
         <v-card>
           <v-container>
             <v-card-title>News</v-card-title>
             <virtual-list  style="height: 400px; overflow-y: auto;"
             :data-key="'date'"
             :data-sources="news"
-            :data-component="itemComponent"
+            :data-component="newsComponent"
             />
             </v-container>
             </v-card>
+      </v-col>
         </v-container>
     </v-img>
     </v-card>
@@ -39,7 +40,8 @@
 <script>
 import Renews from './renews'
 import News from './news'
-import Item from './newsItem'
+import newsItem from './newsItem'
+import renewsItem from './renewsItem'
 import VirtualList from 'vue-virtual-scroll-list'
   export default {
     components: { 'virtual-list': VirtualList },
@@ -48,7 +50,8 @@ import VirtualList from 'vue-virtual-scroll-list'
         title: 'お知らせ',
         renews: Renews.renews,
         news: News.newspapers,
-        itemComponent: Item,
+        newsComponent: newsItem,
+        renewsComponent: renewsItem,
         
     }),
     
