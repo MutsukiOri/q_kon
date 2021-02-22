@@ -68,6 +68,7 @@
       >
         <v-btn
         outlined
+        rounded
         v-bind:to=menuItem.url
         class="button"
         >

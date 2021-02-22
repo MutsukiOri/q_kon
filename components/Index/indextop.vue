@@ -3,7 +3,7 @@
     <v-img
         v-bind:src="imgPath"
         class="white--text align-center"
-        gradient="to bottom, rgba(111,30,220,.1), rgba(1,3,20,.7)"
+        gradient="to top, rgba(1,3,20,.3), rgba(1,3,20,.4)"
         height="400"
       >
       <v-container>
@@ -24,7 +24,7 @@
           >
             <v-btn
             rounded
-            outlined
+            
             color="white"
             v-scroll-to=buttonItem.target
             >

@@ -22,7 +22,7 @@
           >
             <v-btn
             rounded
-            outlined
+            
             color="white"
             v-scroll-to=buttonItem.target
             >
@@ -41,8 +41,8 @@
     data(){
       return {
         imgPath: require('~/assets/images/2020boy.jpg'),
-        title: '発声あるある',
-        text: `一番大事`,
+        title: 'About',
+        text: `九混ってどんなの？`,
         buttonItems: [
           {
             title: '活動実績',

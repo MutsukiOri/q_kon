@@ -6,7 +6,7 @@
     <v-img
         v-bind:src="imgPath"
         class="white--text align-start"
-        gradient="to bottom, rgba(10,10,100,.6), rgba(120,230,10,.5)"
+        gradient="to bottom, rgba(10,10,10,.6), rgba(20,20,10,.5)"
     >
     <v-container>
     <v-card-title>

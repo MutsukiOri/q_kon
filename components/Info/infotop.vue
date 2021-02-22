@@ -24,7 +24,6 @@
           >
             <v-btn
             rounded
-            outlined
             color="white"
             v-scroll-to=buttonItem.target
             >
@@ -44,9 +43,8 @@
     data(){
       return {
         imgPath: require('~/assets/images/2020girl.jpg'),
-        title: '九大混声合唱団',
-        text: `　九大混声合唱団（九混）は、九州大学を拠点に活動している混声合唱サークルです。昭和38年(1963年)2月に発足し、今まで57年の歴史を歩んできました。
-　団員は九州大学の学生が主ですが、他大学や専門学校の学生も入団できます。 現在は中村学園大学、筑紫女学園大学の仲間がおり、約80人で活動しています。（2020年12月現在）`,
+        title: 'Information',
+        text: `毎年、全国大会出場に向けて日々練習を重ねています。定期演奏会やジョイントコンサートなど発表の機会があれば良いのですが今年はどうなることやら。気になる方はsnsで最新情報をCHECK!!!`,
         buttonItems: [
           {
             title: '九混SNS',
