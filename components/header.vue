@@ -6,16 +6,15 @@
       prominent
       
       shrink-on-scroll
-      src="https://picsum.photos/1920/1080?random"
+      v-bind:src="imgPath"
       scroll-target="#scrolling-techniques-3"
     >
       <template v-slot:img="{ props }">
         <v-img
           v-bind="props"
-          gradient="to top right, rgba(19,84,122,.5), rgba(128,208,199,.8)"
+          gradient="to right, rgba(120,120,120,0.5), rgba(255, 128, 171, 0.5)"
         ></v-img>
       </template>
-
     <mq-layout mq='sm'>
       <v-app-bar-nav-icon @click="drawer = true">
       </v-app-bar-nav-icon>
@@ -53,8 +52,9 @@
 
       <v-app-bar-title
       class="pl-10"
-      >
-      九大混声合唱団
+      ><strong>
+        九大混声合唱団
+      </strong>
       </v-app-bar-title>
 
       <v-spacer></v-spacer>
@@ -83,6 +83,7 @@
 export default {
   data () {
     return {
+      imgPath: require('~/assets/images/header.jpg'),
       menuItems: [
       {
         name: 'Home',
