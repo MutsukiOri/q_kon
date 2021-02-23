@@ -60,7 +60,7 @@ export default {
             advisors: [
                 { 
                   name: '竹田享司  Takeda  Kyoji',
-                  src: require('~/assets/advisor/Takeda.jpg'),
+                  src: '/advisor/Takeda.jpg',
                   role: `
                         指揮者／音楽・技術顧問`,
                   more:`
@@ -74,7 +74,7 @@ export default {
                 },
                 {
                   name: '山口幸志 Yamaguchi Koji',
-                  src: require('~/assets/advisor/Yamaguchi.jpg'),
+                  src: '/advisor/Yamaguchi.jpg',
                   role: `
                   ヴォイストレーナー/テノール`,
                   more: `
@@ -86,7 +86,7 @@ export default {
 
                 {
                   name: '永石伸子 Nagaishi Nobuko',
-                  src: require('~/assets/advisor/Nagaishi.jpg'),
+                  src: '/advisor/Nagaishi.jpg',
                   role: `
                   ヴォイストレーナー/ソプラノ`,
                   more: `
