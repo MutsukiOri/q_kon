@@ -47,7 +47,7 @@ export default {
             imgPath: 'https://pbs.twimg.com/media/EqnNsO2UwAEntH4?format=jpg',
             concerts: [
                 { 
-                  src: require('~/assets/concert/2019concert.jpg'),
+                  src: '/images/concert/2019concert.jpg',
                   title: `♫第56回九大混声合唱団定期演奏会`,
                   more:`
 　九州芸術工科大学（現在の九州大学芸術工学部）音響設計学科を卒業。
@@ -59,7 +59,7 @@ export default {
 
                 },
                 {
-                  src: require('~/assets/concert/2018concert.jpg'),
+                  src: '/images/concert/2018concert.jpg',
                   title: `♫第55回九大混声合唱団定期演奏会`,
                   more: `
 　東京工業大学大学院修了。
@@ -69,7 +69,7 @@ export default {
                 },
 
                 {
-                  src: require('~/assets/concert/2017concert.jpg'),
+                  src: '/images/concert/2017concert.jpg',
                   title: `♫第54回九大混声合唱団定期演奏会`,
                   more: `
 　ルチアノ・ベルタニョリオ氏に師事。
