@@ -84,7 +84,7 @@
 export default {
   data () {
     return {
-      imgPath: require('~/assets/images/header.jpg'),
+      imgPath: '/images/header.jpg',
       menuItems: [
       {
         name: 'Home',

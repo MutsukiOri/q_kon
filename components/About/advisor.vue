@@ -60,7 +60,7 @@ export default {
             advisors: [
                 { 
                   name: '竹田享司  Takeda  Kyoji',
-                  src: '/advisor/Takeda.jpg',
+                  src: '/images/advisor/Takeda.jpg',
                   role: `
                         指揮者／音楽・技術顧問`,
                   more:`
@@ -74,7 +74,7 @@ export default {
                 },
                 {
                   name: '山口幸志 Yamaguchi Koji',
-                  src: '/advisor/Yamaguchi.jpg',
+                  src: '/images/advisor/Yamaguchi.jpg',
                   role: `
                   ヴォイストレーナー/テノール`,
                   more: `
@@ -86,7 +86,7 @@ export default {
 
                 {
                   name: '永石伸子 Nagaishi Nobuko',
-                  src: '/advisor/Nagaishi.jpg',
+                  src: '/images/advisor/Nagaishi.jpg',
                   role: `
                   ヴォイストレーナー/ソプラノ`,
                   more: `
@@ -96,7 +96,7 @@ export default {
 　佐世保市音楽協会会員。佐世保出身。`
                   }
             ],
-            imgPath: require('~/assets/images/shiiki.jpg')
+            imgPath: '/images/shiiki.jpg'
         }
     }
 }
