@@ -1,11 +1,11 @@
 <template>
     <v-app-bar
-      
+      app
+      absolute
       prominent
       dark
-      shrink-on-scroll
+      
       v-bind:src="imgPath"
-      scroll-target="#scrolling-techniques-3"
     >
       <template v-slot:img="{ props }">
         <v-img

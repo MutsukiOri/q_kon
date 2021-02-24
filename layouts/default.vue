@@ -3,7 +3,7 @@
   <v-app style="background-color:#f7be81;">
       <Header/>
       <v-main>
-          <nuxt />
+        <nuxt />
       </v-main>
       <ButtonToTop/>
       <v-footer>
