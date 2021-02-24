@@ -33,13 +33,6 @@ export default {
                     ],
                     index: null,
                 },
-                {
-                    title: "みんなの写真",
-                    images: [
-                        
-                    ],
-                    index: null
-                }
             ]
         },
         {
@@ -135,14 +128,74 @@ export default {
                 {
                     title: "定演カレンダー",
                     images: [
-                        
+                        require('~/assets/images/H30/concert_calender/0.jpg'),
+                        require('~/assets/images/H30/concert_calender/1.jpg'),
+                        require('~/assets/images/H30/concert_calender/2.jpg'),
+                        require('~/assets/images/H30/concert_calender/3.jpg'),
+                        require('~/assets/images/H30/concert_calender/4.jpeg'),
+                        require('~/assets/images/H30/concert_calender/5.jpg'),
+                        require('~/assets/images/H30/concert_calender/6.jpg'),
+                        require('~/assets/images/H30/concert_calender/7.jpg'),
+                        require('~/assets/images/H30/concert_calender/8.jpg'),
+                        require('~/assets/images/H30/concert_calender/9.jpg'),
+                        require('~/assets/images/H30/concert_calender/10.png'),
+                        require('~/assets/images/H30/concert_calender/12.jpg'),
+                        require('~/assets/images/H30/concert_calender/13.jpg'),
+                        require('~/assets/images/H30/concert_calender/14.jpg'),
+                        require('~/assets/images/H30/concert_calender/15.jpg'),
+                        require('~/assets/images/H30/concert_calender/16.jpg'),
+                        require('~/assets/images/H30/concert_calender/17.jpg'),
+                        require('~/assets/images/H30/concert_calender/18.jpg'),
+                        require('~/assets/images/H30/concert_calender/19.jpg'),
+                        require('~/assets/images/H30/concert_calender/20.jpg'),
+                        require('~/assets/images/H30/concert_calender/21.jpg'),
+                        require('~/assets/images/H30/concert_calender/22.jpg'),
+                        require('~/assets/images/H30/concert_calender/23.jpg'),
+                        require('~/assets/images/H30/concert_calender/24.jpg'),
+                        require('~/assets/images/H30/concert_calender/25.jpg'),
+                        require('~/assets/images/H30/concert_calender/26.jpg'),
+                        require('~/assets/images/H30/concert_calender/27.jpg'),
+                        require('~/assets/images/H30/concert_calender/28.jpg'),
+                        require('~/assets/images/H30/concert_calender/29.jpg'),
+                        require('~/assets/images/H30/concert_calender/30.jpeg'),
                     ],
                     index: null
                 },
                 {
                     title: "みんなの写真",
                     images: [
-                        
+                        require('~/assets/images/H30/photos/rensyu1.jpg'),
+                        require('~/assets/images/H30/photos/obog1.jpg'),
+                        require('~/assets/images/H30/photos/graduation1.jpg'),
+                        require('~/assets/images/H30/photos/graduation2.jpg'),
+                        require('~/assets/images/H30/photos/graduation3.jpg'),
+                        require('~/assets/images/H30/photos/springgroup.png'),
+                        require('~/assets/images/H30/photos/shinkan1.jpg'),
+                        require('~/assets/images/H30/photos/shinkan2.jpg'),
+                        require('~/assets/images/H30/photos/shinkan3.jpg'),
+                        require('~/assets/images/H30/photos/shinkan4.jpg'),
+                        require('~/assets/images/H30/photos/ken.jpeg'),
+                        require('~/assets/images/H30/photos/obog2.jpg'),
+                        require('~/assets/images/H30/photos/summer.jpeg'),
+                        require('~/assets/images/H30/photos/kyushu1.jpeg'),
+                        require('~/assets/images/H30/photos/kyushu2.jpeg'),
+                        require('~/assets/images/H30/photos/kyushu3.jpeg'),
+                        require('~/assets/images/H30/photos/kyushu4.jpeg'),
+                        require('~/assets/images/H30/photos/kyushu5.jpeg'),
+                        require('~/assets/images/H30/photos/kaizuka.jpg'),
+                        require('~/assets/images/H30/photos/autumn.jpeg'),
+                        require('~/assets/images/H30/photos/zenkoku1.jpg'),
+                        require('~/assets/images/H30/photos/zenkoku2.jpg'),
+                        require('~/assets/images/H30/photos/zenkoku3.jpg'),
+                        require('~/assets/images/H30/photos/radio.jpeg'),
+                        require('~/assets/images/H30/photos/teien1.jpg'),
+                        require('~/assets/images/H30/photos/teien2.jpg'),
+                        require('~/assets/images/H30/photos/teien3.jpg'),
+                        require('~/assets/images/H30/photos/teien4.jpg'),
+                        require('~/assets/images/H30/photos/teien5.jpg'),
+                        require('~/assets/images/H30/photos/teien6.jpg'),
+                        require('~/assets/images/H30/photos/rep.jpg'),
+                        require('~/assets/images/H30/photos/con.jpg'),
                     ],
                     index: null
                 }
