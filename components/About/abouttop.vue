@@ -40,7 +40,7 @@
   export default {
     data(){
       return {
-        imgPath: '/images/2020boy.jpg',
+        imgPath: require('~/assets/images/2020boy.jpg'),
         title: 'About',
         text: `九混ってどんなの？`,
         buttonItems: [

@@ -24,10 +24,10 @@ import VueGallerySlideshow from 'vue-gallery-slideshow';
     },
     data: () => ({
       images: [
-        '/images/member/sop2019.jpg',
-        '/images/member/alt2019.jpg',
-        '/images/member/tenor2019.jpg',
-        '/images/member/bass2019.jpg',
+        require('~/assets/images/member/sop2019.jpg'),
+        require('~/assets/images/member/alt2019.jpg'),
+        require('~/assets/images/member/tenor2019.jpg'),
+        require('~/assets/images/member/bass2019.jpg'),
       ],
       index: null
     }),

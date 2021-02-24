@@ -24,7 +24,7 @@
 <script>
   export default {
     data: () => ({
-        imgPath: '/images/shiiki.jpg',
+        imgPath: require('~/assets/images/shiiki.jpg'),
         title: '練習について',
         time: `　基本的に週3回(火、木、土)
                 火曜日・木曜日：18:30〜20:30、土曜日：10:00〜12:30

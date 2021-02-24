@@ -40,7 +40,7 @@
   export default {
     data(){
       return {
-        imgPath: '/images/shiiki_from_stage.jpg',
+        imgPath: require('~/assets/images/shiiki_from_stage.jpg'),
         title: 'Gallery',
         text: `足跡`,
         buttonItems: [

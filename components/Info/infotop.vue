@@ -42,7 +42,7 @@
   export default {
     data(){
       return {
-        imgPath: '/images/2020girl.jpg',
+        imgPath: require('~/assets/images/2020girl.jpg'),
         title: 'Information',
         text: `毎年、全国大会出場に向けて日々練習を重ねています。定期演奏会やジョイントコンサートなど発表の機会があれば良いのですが今年はどうなることやら。気になる方はsnsで最新情報をCHECK!!!`,
         buttonItems: [
