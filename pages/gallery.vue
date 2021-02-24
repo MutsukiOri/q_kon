@@ -7,19 +7,26 @@
     </v-row>
     <v-row v-for="gallery in galleries" :key="gallery" :id=gallery.id>
       <v-col class="pa-2" >
-        <v-card color="grey" class="white--text">
+        <v-card color="pink lighten-4">
           <v-card-title v-text="gallery.name"/>
           <v-container fluid>
             <v-col v-for="content in gallery.contents" :key="content">
-              <v-card>
+              <v-card color="white">
                 <v-card-title v-text="content.title"/>
                 <v-container fluid>
                 <v-row>
                   <v-col cols="6" sm="4" md="3" lg="2" v-for="(image, i) in content.images" :key="i">
-                    <img width="100%" class="image" :src=image @click="content.index = i">
+                    <v-hover 
+                    v-slot="{ hover }">
+                    <v-card
+                    :elevation="hover ? 16 : 2"
+                    :class="{ 'on-hover': hover }">
+                      <img width="100%" class="image" :src=image @click="content.index = i">
                     <client-only placeholder="Loading...">
                       <vue-gallery-slideshow :images="content.images" :index="content.index" @close="content.index = null" />
                     </client-only>
+                    </v-card>
+                    </v-hover>
                   </v-col>
                 </v-row>
                 </v-container>
