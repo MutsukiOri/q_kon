@@ -46,18 +46,28 @@
         buttonItems: [
           {
             title: '令和2年度',
-            icon: 'mdi-account-check-outline',
+            icon: 'mdi-image-outline',
             target: '#R2',
           },
           {
             title: '令和元年',
-            icon: 'mdi-card-account-details-outline',
+            icon: 'mdi-image-outline',
             target: '#R1',
           },
           {
             title: '平成30年度',
-            icon: 'mdi-account-check-outline',
+            icon: 'mdi-image-outline',
             target: '#H30',
+          },
+          {
+            title: '平成29年度',
+            icon: 'mdi-image-outline',
+            target: '#H29',
+          },
+          {
+            title: '平成28年度',
+            icon: 'mdi-image-outline',
+            target: '#H28',
           },
         ],
     }

@@ -8,11 +8,11 @@
     <v-row v-for="gallery in galleries" :key="gallery" :id=gallery.id>
       <v-col class="pa-2" >
         <v-card color="pink lighten-4">
-          <v-card-title v-text="gallery.name"/>
+          <v-card-title class="headline justify-center" v-text="gallery.name"/>
           <v-container fluid>
             <v-col v-for="content in gallery.contents" :key="content">
               <v-card color="white">
-                <v-card-title v-text="content.title"/>
+                <v-card-title class="justify-center" v-text="content.title"/>
                 <v-container fluid>
                 <v-row>
                   <v-col cols="6" sm="4" md="3" lg="2" v-for="(image, i) in content.images" :key="i">
