@@ -1,16 +1,11 @@
 <template>
-  <v-row>
-      <v-col cols="12">
-        <v-divider></v-divider>
-      </v-col>
-      <v-col cols="12" md="2">
-      {{ source.date }}
-      </v-col>
-      <v-col cols=12 md="10">
-        {{ source.text }}
-      </v-col>
+  <v-card tile outlined class="pb-2">
       
-  </v-row>
+      <v-card-subtitle>{{ source.date }}</v-card-subtitle>
+      <v-card-text>
+        {{ source.text }}
+      </v-card-text>
+  </v-card>
 </template>
  
 <script>

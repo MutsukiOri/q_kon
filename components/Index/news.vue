@@ -10,25 +10,29 @@
       <v-card-title v-text="title"/>
       <v-col>
         <v-card>
-          <v-container>
-            <v-card-title>更新情報</v-card-title>
+          
+            <v-card-title outlined>更新情報</v-card-title>
+            <v-card-text>
             <virtual-list  style="height: 200px; overflow-y: auto;"
             :data-key="'date'"
             :data-sources="renews"
             :data-component="renewsComponent"
             />
-          </v-container>
+            </v-card-text>
+          
         </v-card>
       </v-col>
       <v-col>
         <v-card>
           <v-container>
             <v-card-title>News</v-card-title>
+            
             <virtual-list  style="height: 400px; overflow-y: auto;"
             :data-key="'date'"
             :data-sources="news"
             :data-component="newsComponent"
             />
+            
             </v-container>
             </v-card>
       </v-col>

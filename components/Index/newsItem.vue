@@ -1,14 +1,11 @@
 <template>
-  <v-row>
-      <v-col>
-      {{ source.date }} - 
-      <strong>{{ source.title }}</strong>
-      </v-col>
-      <v-col cols=12>
+  <v-card outlined class="pb-2">
+      <v-card-title>{{ source.title }}</v-card-title>
+      <v-card-subtitle>{{ source.date }}</v-card-subtitle>
+      <v-card-text>
         {{ source.text }}
-        <v-divider></v-divider>
-      </v-col>
-  </v-row>
+      </v-card-text>
+  </v-card>
 </template>
  
 <script>
