@@ -3,6 +3,8 @@ export default {
         // {テンプレート
         //     id: "H29",
         //     name: '平成29年度',
+        //     thumbnail: require('~/assets/images/R2/concert_calender/1.jpg'),
+            // dialog: false,
         //     contents: [
         //         {
         //             title: "定演カレンダー",
@@ -16,6 +18,8 @@ export default {
         {
             id: 'R2',
             name: '令和2年度',
+            thumbnail: require('~/assets/images/R2/concert_calender/1.jpg'),
+            dialog: false,
             contents: [
                 {
                     title: "定演カレンダー",
@@ -51,6 +55,8 @@ export default {
         {
             id: 'R1',
             name: '令和元年度',
+            thumbnail: require('~/assets/images/R1/photos/zenkoku5.jpg'),
+            dialog: false,
             contents: [
                 {
                     title: "定演カレンダー",
@@ -130,13 +136,15 @@ export default {
                         require('~/assets/images/R1/photos/teien12.jpg'),
                         require('~/assets/images/R1/photos/teien13.jpg'),
                    ],
-                   index: null
+                   index: null,
                 }
             ]
         },
         {
             id: 'H30',
             name: '平成30年度',
+            thumbnail: require('~/assets/images/H30/concert_calender/0.jpg'),
+            dialog: false,
             contents: [
                 {
                     title: "定演カレンダー",
@@ -217,6 +225,8 @@ export default {
         {
             id: "H29",
             name: '平成29年度',
+            thumbnail: require('~/assets/images/H29/photos/teien.jpg'),
+            dialog: false,
             contents: [
                 {
                     title: "定演カレンダー",
@@ -290,6 +300,8 @@ export default {
         {
             id: "H28",
             name: '平成28年度',
+            thumbnail: require('~/assets/images/H28/photos/teien3.jpg'),
+            dialog: false,
             contents: [
                 {
                     title: "定演カレンダー",
