@@ -24,11 +24,11 @@
             >
               <v-img
               v-bind:src="gallery.thumbnail"
-              class="white--text align-center"
+              class="white--text align-end"
               gradient="to top, rgba(1,3,20,.3), rgba(1,3,20,.4)"
               height="300"
               >
-                <v-card-title>
+                <v-card-title class="justify-center">
                   {{gallery.name}}
                 </v-card-title>
               </v-img>

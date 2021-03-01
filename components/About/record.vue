@@ -28,24 +28,25 @@
                     {{year.name}}
                 </v-avatar>
             </template>
-            <v-card class="elevation-2" >
+            <v-card class="elevation-2" color="#F5917E lighten-2" >
                 <v-card-text>
-                    <v-row
+                    <v-card
+                    outlined
+                    tile
                     v-for="(record, index) in year.records" 
                     :key="index">
-                        <v-sheet
-                        width='100%'
-                        dence
-                        outlined>
-                        <v-row
+                        
+                        <!-- <v-row
                         justify="center"
                         no-gutters>
                         <v-col cols="12" md="2" class="date">{{record.date}}</v-col>
                         <v-col cols="10" ><strong>{{ record.title }}</strong></v-col>
                         <v-col cols="8">{{record.place}}</v-col>
-                        </v-row>
-                        </v-sheet>
-                    </v-row>
+                        </v-row> -->
+                        <v-card-title>{{record.title}}</v-card-title>
+                        <v-card-subtitle>{{record.date}}  {{record.place}}</v-card-subtitle>
+                        <!-- <v-card-text>{{record.place}}</v-card-text> -->
+                    </v-card>
                     
                 </v-card-text>
             </v-card>
