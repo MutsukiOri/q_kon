@@ -12,10 +12,12 @@
         v-model="gallery.dialog"
         width="100%"
         hide-overlay
+        fullscreen
         transition-group="dialog-bottom-transition"
         >
           <template v-slot:activator="{ on, attrs }">
             <v-card
+              tile
               dark
               v-bind="attrs"
               v-on="on"
@@ -78,6 +80,19 @@
                         </v-hover>
                       </v-col>
                     </v-row>
+    <v-row>
+    <div id="lightgallery" class="row">
+      <a class="col-6 col-md-4 col-lg-3" href="https://dzine.io/products/lightgallery-wp-plugin/static/images/demo/image-6-lg.jpg">
+        <img width="100%" class="img-thumbnail" src="https://dzine.io/products/lightgallery-wp-plugin/static/images/demo/thumb-6.jpg" >
+      </a>
+      <a class="col-6 col-md-4 col-lg-3" href="https://dzine.io/products/lightgallery-wp-plugin/static/images/demo/image-12-lg.jpg">
+        <img width="100%" class="img-thumbnail" src="https://dzine.io/products/lightgallery-wp-plugin/static/images/demo/thumb-12.jpg" >
+      </a>
+      <a class="col-6 col-md-4 col-lg-3" :href="imgPath">
+        <img width="100%" class="img-thumbnail" :src="imgPath">
+      </a>
+    </div>
+    </v-row>
                   </v-container>
                 </v-card>
               </v-col>
@@ -85,18 +100,21 @@
             </v-sheet>
           </v-card>
         </v-dialog>
-      </v-col>
+    </v-col>
     </v-row>
-  <div class="app-container">
-    <div id="lightgallery">
-      <a href="https://dzine.io/products/lightgallery-wp-plugin/static/images/demo/image-6-lg.jpg">
-        <img src="https://dzine.io/products/lightgallery-wp-plugin/static/images/demo/thumb-6.jpg" >
+    <!-- <v-row>
+    <div id="lightgallery" class="row">
+      <a class="col-6 col-md-4 col-lg-3" href="https://dzine.io/products/lightgallery-wp-plugin/static/images/demo/image-6-lg.jpg">
+        <img width="100%" class="img-thumbnail" src="https://dzine.io/products/lightgallery-wp-plugin/static/images/demo/thumb-6.jpg" >
       </a>
-      <a href="https://dzine.io/products/lightgallery-wp-plugin/static/images/demo/image-12-lg.jpg">
-        <img src="https://dzine.io/products/lightgallery-wp-plugin/static/images/demo/thumb-12.jpg" >
+      <a class="col-6 col-md-4 col-lg-3" href="https://dzine.io/products/lightgallery-wp-plugin/static/images/demo/image-12-lg.jpg">
+        <img width="100%" class="img-thumbnail" src="https://dzine.io/products/lightgallery-wp-plugin/static/images/demo/thumb-12.jpg" >
+      </a>
+      <a class="col-6 col-md-4 col-lg-3" :href="imgPath">
+        <img width="100%" class="img-thumbnail" :src="imgPath">
       </a>
     </div>
-  </div>
+    </v-row> -->
   </v-container>
 </template>
 
@@ -104,16 +122,7 @@
 import Top from '@/components/Gallery/gallerytop.vue';
 import VueGallerySlideshow from 'vue-gallery-slideshow';
 import Gallery from '~/components/Gallery/gallery.js'
-import 'lightgallery.js'
-import 'lightgallery.js/dist/css/lightgallery.css'
-import 'lg-zoom.js'
-import 'lg-autoplay.js'
-import 'lg-fullscreen.js'
-import 'lg-hash.js'
-import 'lg-pager.js'
-import 'lg-share.js'
-import 'lg-thumbnail.js'
-import 'lg-video.js'
+
 // import lightGallery from 'lightgallery'
   export default {
     components: {
