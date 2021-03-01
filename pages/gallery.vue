@@ -6,7 +6,7 @@
       </v-col>
     </v-row>
     <v-row>
-    <v-col cols="12" sm="6" md="4" v-for="(gallery, ind) in galleries" :key="ind" :id="gallery.id">
+    <v-col cols="6" sm="4" md="3" v-for="(gallery, ind) in galleries" :key="ind" :id="gallery.id">
       
         <v-dialog
         v-model="gallery.dialog"
@@ -80,19 +80,6 @@
                         </v-hover>
                       </v-col>
                     </v-row>
-    <v-row>
-    <div id="lightgallery" class="row">
-      <a class="col-6 col-md-4 col-lg-3" href="https://dzine.io/products/lightgallery-wp-plugin/static/images/demo/image-6-lg.jpg">
-        <img width="100%" class="img-thumbnail" src="https://dzine.io/products/lightgallery-wp-plugin/static/images/demo/thumb-6.jpg" >
-      </a>
-      <a class="col-6 col-md-4 col-lg-3" href="https://dzine.io/products/lightgallery-wp-plugin/static/images/demo/image-12-lg.jpg">
-        <img width="100%" class="img-thumbnail" src="https://dzine.io/products/lightgallery-wp-plugin/static/images/demo/thumb-12.jpg" >
-      </a>
-      <a class="col-6 col-md-4 col-lg-3" :href="imgPath">
-        <img width="100%" class="img-thumbnail" :src="imgPath">
-      </a>
-    </div>
-    </v-row>
                   </v-container>
                 </v-card>
               </v-col>
