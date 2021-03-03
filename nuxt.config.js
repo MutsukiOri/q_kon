@@ -22,7 +22,8 @@ export default {
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
     '~plugins/vue-scrollto',
-    { src: '~/plugins/lightgallery.client.js' }
+    { src: '~/plugins/lightgallery.client.js' },
+    // { src: '~/plugins/vue-full-calendar', ssr: false }
     
   ],
   router: {

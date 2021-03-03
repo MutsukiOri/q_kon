@@ -27,7 +27,7 @@
           dense
           class="pa-2"
         >
-        <Calender/>
+        <Calendar/>
         </v-col>
       </v-row>
     </v-container>
@@ -37,13 +37,13 @@
   import Top from '@/components/Index/indextop.vue';
   import News from '@/components/Index/news.vue';
   import Plan from '@/components/Index/plan.vue';
-  import Calender from '@/components/Index/calender.vue'
+  import Calendar from '@/components/Index/calendar.vue'
   export default {
     components: {
       Top,
       News,
       Plan,
-      Calender
+      Calendar
     },
     data: () => ({
 
