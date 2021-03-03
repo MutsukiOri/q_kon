@@ -55,7 +55,6 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
-    transpile: /@fullcalendar.*/ 
   },
   // deploy router base
   target: 'static',
