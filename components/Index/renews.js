@@ -1,6 +1,10 @@
 export default {
     renews: [
         {
+            date: '2021.03,04',
+            text: `カレンダーの表示を更新しました。`,
+        },
+        {
             date: '2021.02.26',
             text: `Galleryの実装をしました。`,
         },
