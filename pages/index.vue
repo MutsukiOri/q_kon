@@ -27,7 +27,7 @@
           dense
           class="pa-2"
         >
-        <Calendar/>
+        <Schedule/>
         </v-col>
       </v-row>
     </v-container>
@@ -37,17 +37,14 @@
   import Top from '@/components/Index/indextop.vue';
   import News from '@/components/Index/news.vue';
   import Plan from '@/components/Index/plan.vue';
-  import Calendar from '@/components/Index/calendar.vue'
+  import Schedule from '@/components/Index/schedule.vue';
   export default {
     components: {
       Top,
       News,
       Plan,
-      Calendar
+      Schedule
     },
-    data: () => ({
-
-    }),
   }
 </script>
 

@@ -76,10 +76,11 @@ import jaLocale from "@fullcalendar/core/locales/ja";
             e.dayNumberText = e.dayNumberText.replace('日', '');
           },
         eventClick: function(info) {
-        //カレンダーへのリンクはさせません。
-        info.jsEvent.preventDefault();
-        hogehoge(info);
-          },
+          info.jsEvent.preventDefault(); // don't let the browser navigate
+          if (info.event.url) { //別タブでGoogleカレンダー開かせる
+            window.open(info.event.url);
+          }
+        },
         // select: this.handleDateSelect,
         // eventsSet: this.handleEvents,
         // eventClick: this.handleEventClick,
@@ -130,6 +131,4 @@ import jaLocale from "@fullcalendar/core/locales/ja";
     font-size: 62.5%;
   }
 }
-.fc-sun { color: red; }  /* 日曜日 */
-.fc-sat { color: blue; } /* 土曜日 */
 </style>
