@@ -49,11 +49,11 @@
             icon: 'mdi-history',
             target: '#record',
           },
-          {
-            title: '団員紹介',
-            icon: 'mdi-card-account-details-outline',
-            target: '#member',
-          },
+          // {
+          //   title: '団員紹介',
+          //   icon: 'mdi-card-account-details-outline',
+          //   target: '#member',
+          // },
           {
             title: '指導者紹介',
             icon: 'mdi-account-check-outline',

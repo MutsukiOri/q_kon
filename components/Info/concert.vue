@@ -17,7 +17,7 @@
         sm="6"
         lg="4"
         >
-          <v-expansion-panels
+          <!-- <v-expansion-panels
           hover
           focusable>
             <v-expansion-panel 
@@ -32,7 +32,58 @@
                 <strong >{{ concert.title }}</strong>{{concert.more}}
               </v-expansion-panel-content>
             </v-expansion-panel>
-          </v-expansion-panels>
+          </v-expansion-panels> -->
+          <v-dialog
+          v-model="concert.dialog"
+          width="100%"
+          hide-overlay
+          fullscreen
+          transition-group="dialog-bottom-transition">
+            <template v-slot:activator="{ on, attrs }">
+            <v-card
+              tile
+              dark
+              v-bind="attrs"
+              v-on="on"
+            >
+              <v-img
+              v-bind:src="concert.src"
+              class="white--text align-end"
+              >
+              </v-img>
+            </v-card>
+          </template>
+
+          <v-card class="overflow-hidden">
+            <v-app-bar
+            dark
+            
+            scroll-target="#scrolling-techniques"
+            color="#F5917E"
+            >
+            <v-btn
+                icon
+                dark
+                @click="concert.dialog = false"
+              >
+                <v-icon>mdi-close</v-icon>
+              </v-btn>
+              
+              <v-app-bar-subtitle class="justify-center">{{concert.title}}</v-app-bar-subtitle>
+              
+          
+              
+            </v-app-bar>
+            <v-sheet 
+            id="scrolling-techniques"
+            class="overflow-y-auto"
+            max-height="600">
+            <v-container fluid>
+              
+            </v-container>
+            </v-sheet>
+          </v-card>
+          </v-dialog>
         </v-col>
       </v-row>
     </v-container>
@@ -47,6 +98,7 @@ export default {
             imgPath: 'https://pbs.twimg.com/media/EqnNsO2UwAEntH4?format=jpg',
             concerts: [
                 { 
+                  dialog: false,
                   src: require('~/assets/images/concert/2019concertfront.jpg'),
                   title: `♫第56回九大混声合唱団定期演奏会`,
                   more:`
@@ -59,6 +111,7 @@ export default {
 
                 },
                 {
+                  dialog: false,
                   src: require('~/assets/images/concert/2018concertfront.jpg'),
                   title: `♫第55回九大混声合唱団定期演奏会`,
                   more: `
@@ -69,6 +122,7 @@ export default {
                 },
 
                 {
+                  dialog: false,
                   src: require('~/assets/images/concert/2017concert.png'),
                   title: `♫第54回九大混声合唱団定期演奏会`,
                   more: `
