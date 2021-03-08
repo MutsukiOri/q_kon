@@ -9,7 +9,7 @@
         定期演奏会情報
       </v-card-title>
       <v-row>
-        <v-col
+        <!-- <v-col
         v-for="concert in concerts"
         :key="concert.title"
         dense
@@ -20,6 +20,7 @@
           <v-dialog
           v-model="concert.dialog"
           width="100%"
+          fullscreen
           hide-overlay
           transition-group="dialog-bottom-transition">
             <template v-slot:activator="{ on, attrs }">
@@ -37,9 +38,10 @@
             </v-card>
           </template>
 
-          <v-card>
+          <v-card class="overflow-hidden">
             <v-app-bar
             dark
+            elevate-on-scroll
             scroll-target="#scrolling-techniques"
             color="#F5917E"
             >
@@ -52,15 +54,14 @@
               >
                 <v-icon>mdi-close</v-icon>
               </v-btn>
-          
-              
             </v-app-bar>
-          
-          
-          <H30/>
+            <H30/>
           </v-card>
           </v-dialog>
-        </v-col>
+        </v-col> -->
+        <R1/>
+        <H30/>
+        <H29/>
       </v-row>
     </v-container>
     </v-img>
@@ -68,10 +69,14 @@
 </template>
 
 <script>
+import R1 from '@/components/Info/concerts/R1.vue'
 import H30 from '@/components/Info/concerts/H30.vue'
+import H29 from '@/components/Info/concerts/H29.vue'
 export default {
   components: {
+    R1,
     H30,
+    H29,
   },
     data() {
         return{

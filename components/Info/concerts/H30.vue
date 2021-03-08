@@ -1,10 +1,55 @@
 <template>
-        <v-card
-        tile
-        class="overflow-y-auto pb-6"
-        color="#f7be81">
-        <v-container style="background-color:white;">
-            <div class="h30 mb-4">
+    <v-col
+        dense
+        cols="12"
+        sm="6"
+        lg="4"
+        >
+        <v-dialog
+        v-model="dialog"
+        fullscreen
+        hide-overlay
+        transition-group="dialog-bottom-transition">
+            <template v-slot:activator="{ on, attrs }">
+                <v-card
+                tile
+                dark
+                v-bind="attrs"
+                v-on="on"
+                >
+                    <v-img
+                    v-bind:src="src"
+                    class="white--text align-end"
+                    >
+                    </v-img>
+                </v-card>
+            </template>
+
+          <v-card class="overflow-hidden">
+            <v-app-bar
+            dark
+            elevate-on-scroll
+            scroll-target="#scrolling-techniques"
+            color="#F5917E"
+            >
+              <v-app-bar-title class="justify-center">第55回九大混声合唱団定期演奏会</v-app-bar-title>
+              <v-spacer></v-spacer>
+              <v-btn
+                icon
+                dark
+                @click="dialog = false"
+              >
+                <v-icon>mdi-close</v-icon>
+              </v-btn>
+            </v-app-bar>
+            <v-sheet
+            tile
+            id="scrolling-techniques"
+            class="overflow-y-auto"
+            :max-height=height
+            >
+                <v-container style="background-color:white;">
+                    <div class="h30">
                     <p class="font-weight-bold mb-1">&#9835;第55回九大混声合唱団定期演奏会</p>
                     <p class="mb-2">
                         2018/12/16(日)に九大伊都キャンパス椎木講堂にて九大混声合唱団第55回記念定期演奏会を開催いたしました。<br>
@@ -60,8 +105,12 @@
                         </div>
                     </div>
                 </div>
-        </v-container>
-        </v-card>
+                </v-container>
+            </v-sheet>
+          </v-card>
+        </v-dialog>
+    </v-col>
+        
 </template>
 
 <script>
@@ -69,7 +118,24 @@ export default {
     data () {
         return {
             src: require('~/assets/images/concert/2018concertfront.jpg'),
+            dialog: false,
         }
+    },
+    created () {
+    if (process.client) {
+      window.addEventListener('resize', this.handleResize)
+      this.handleResize()
     }
+  },
+  destroyed () {
+    if (process.client) {
+      window.removeEventListener('resize', this.handleResize)
+    }
+  },
+  methods: {
+    handleResize () {
+      this.height = window.innerHeight - 60
+    }
+  }
 }
 </script>
