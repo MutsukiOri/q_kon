@@ -50,7 +50,7 @@
             target: '#R2',
           },
           {
-            title: '令和元年',
+            title: '令和元年度',
             icon: 'mdi-image-outline',
             target: '#R1',
           },

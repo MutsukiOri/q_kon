@@ -43,7 +43,7 @@
                         <v-col cols="10" ><strong>{{ record.title }}</strong></v-col>
                         <v-col cols="8">{{record.place}}</v-col>
                         </v-row> -->
-                        <v-card-title>{{record.title}}</v-card-title>
+                        <v-card-title style="white-space:pre-wrap; word-wrap:break-word;">{{record.title}}</v-card-title>
                         <v-card-subtitle>{{record.date}}  {{record.place}}</v-card-subtitle>
                         <!-- <v-card-text>{{record.place}}</v-card-text> -->
                     </v-card>

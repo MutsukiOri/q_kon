@@ -5,7 +5,7 @@
     class="white--text align-center"
     gradient="to bottom, rgba(10,0,0,.1), rgba(0,0,0,.5)"
     >
-    <v-container fluid>
+    <v-container>
       <v-card-title>
         指導者紹介
       </v-card-title>
@@ -15,15 +15,24 @@
         :key="advisor.name"
         dense
         cols="12"
-        sm="4"
+        md="4"
         >
 
-          <v-expansion-panels focusable>
+          <v-expansion-panels>
             <v-expansion-panel>
               <v-expansion-panel-header>
-                <v-img
+                <v-row>
+                  <v-col class="12">
+                    <strong>{{ advisor.name }}</strong>
+                  </v-col>
+                  <v-col cols="12">
+                    <strong >{{ advisor.role }}</strong>
+                  </v-col>
+                </v-row>
+                <!-- <v-img
                 :src="advisor.src"
                 >
+                
                 <template v-slot:placeholder>
                   <v-row
                     class="fill-height ma-0"
@@ -36,13 +45,16 @@
                     ></v-progress-circular>
                   </v-row>
                 </template>
-
-                </v-img>
+                </v-img> -->
                 
               </v-expansion-panel-header>
-              <v-expansion-panel-content style="white-space:pre-wrap; word-wrap:break-word;">
-                <strong>{{ advisor.name }}</strong>
-                <strong >{{ advisor.role }}</strong>{{advisor.more}}
+              <v-expansion-panel-content class="justify-content-center" style="white-space:pre-wrap; word-wrap:break-word;">
+                <v-img
+                width="80%"
+                :src="advisor.src"
+                >
+                </v-img>
+                {{advisor.more}}
               </v-expansion-panel-content>
             </v-expansion-panel>
           </v-expansion-panels>

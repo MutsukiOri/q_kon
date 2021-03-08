@@ -1,6 +1,11 @@
 export default {
     renews: [
         {
+            date: '2021.03,09',
+            text: `指導者紹介を更新しました`,
+            url: '/about/#advisor',
+        },
+        {
             date: '2021.03,08',
             text: `定期演奏会情報を更新しました`,
             url: '/info/#concert',
