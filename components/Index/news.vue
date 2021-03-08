@@ -8,11 +8,12 @@
     >
     <v-container>
       <v-card-title v-text="title"/>
-      <v-card-text>気になる項目をクリックorタップ</v-card-text>
+      <!-- <v-card-text>気になる項目をクリックorタップ</v-card-text> -->
       <v-col>
         <v-card>
           
             <v-card-title outlined>更新情報</v-card-title>
+            <v-card-subtitle>気になる項目をクリックorタップ</v-card-subtitle>
             <v-card-text>
             <virtual-list  style="height: 200px; overflow-y: auto;"
             :data-key="'date'"

@@ -10,7 +10,7 @@
       <template v-slot:img="{ props }">
         <v-img
           v-bind="props"
-          gradient="to right top, rgba(255, 161, 193,0.2), rgba(255, 128, 171, 0.8)"
+          gradient="to right, rgba(255, 161, 193,0.5), rgba(51, 25, 34, 0.6)"
         ></v-img>
       </template>
     <mq-layout mq='sm'>
@@ -68,6 +68,8 @@
       <v-btn
       light
       rounded
+      outlined
+      color="white"
       v-bind:to=menuItem.url
       class="button"
       >
