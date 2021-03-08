@@ -1,5 +1,5 @@
 <template>
-  <v-card tile outlined class="pb-2">
+  <v-card tile outlined class="pb-2 card" v-bind:to=source.url>
       
       <v-card-subtitle>{{ source.date }}</v-card-subtitle>
       <v-card-text>
@@ -24,3 +24,9 @@
     }
   }
 </script>
+
+<style scoped>
+.card {
+  text-decoration: none;
+}
+</style>

@@ -3,39 +3,24 @@
     <v-img
         v-bind:src="imgPath"
         class="white--text align-center"
-        gradient="to bottom, rgba(10,0,0,1), rgba(0,0,0,.5)"
+        gradient="to bottom, rgba(10,0,0,.7), rgba(0,0,0,.7)"
     >
         <v-container>
         <v-card-title v-text="title"></v-card-title>
-        <v-card-text>
-            <v-card
-            color='rgba(0, 0, 0, 0)'
-            dark
-            flat>
+        
+            
                 
                 <v-card-text v-text="thanks"></v-card-text>
-            </v-card>
-            <v-card
-            color='rgba(0, 0, 0, 0)'
-            dark
-            flat>
+            
+            
                 <v-card-title>OB•OG交流会</v-card-title>
                 <v-card-text v-text="exchange"></v-card-text>
-            </v-card>
-            <v-card
-            color='rgba(0, 0, 0, 0)'
-            dark
-            flat>
-                <v-card
-                color='rgba(0, 0, 0, 0)'
-                dark
-                flat>
+            
+            
                     <v-card-title large>変更の届け出</v-card-title>
                     <v-card-text v-text="address"></v-card-text>
                     <v-card-text v-text="mail"></v-card-text>
-                </v-card>
-            </v-card>
-        </v-card-text>
+                
         </v-container>
     </v-img>
     </v-card>

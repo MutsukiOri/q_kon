@@ -55,6 +55,10 @@
                             2019/12/15(日)にアクロス福岡シンフォニーホールにて九大混声合唱団第56回定期演奏会を開催いたしました。<br>
                             1000名以上のお客様にご来場いただき、大変華やかで楽しい演奏会となりました。<br>
                             ご来場いただいた皆様、誠にありがとうございました！<br>
+                            Youtubeの九混チャンネルに『<a href="https://youtu.be/1aicyIVCR50"
+                                target=”_blank”>君をのせて</a>』『<a href="https://youtu.be/94ieiuTAaTE"
+                                target=”_blank”>Sogno di Volare</a>』『<a href="https://youtu.be/iLwpPNjR5Ws"
+                                target=”_blank”>あめ・樹木</a>』の演奏をアップしておりますのでどうぞお楽しみください。
                         </p>
                         <div class="row">
                             <div class="col-12 col-md-6 mb-2">

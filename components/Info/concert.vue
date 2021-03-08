@@ -3,11 +3,14 @@
     <v-img
     v-bind:src="imgPath"
     class="white--text align-center"
-    gradient="to bottom, rgba(10,0,0,.9), rgba(0,0,0,.8)">
+    gradient="to bottom, rgba(10,0,0,.9), rgba(0,0,0,.3)">
     <v-container>
       <v-card-title>
         定期演奏会情報
       </v-card-title>
+      <v-card-text>
+        詳細情報は画像をクリックorタップ
+      </v-card-text>
       <v-row>
         <!-- <v-col
         v-for="concert in concerts"

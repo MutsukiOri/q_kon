@@ -8,6 +8,7 @@
     >
     <v-container>
       <v-card-title v-text="title"/>
+      <v-card-text>気になる項目をクリックorタップ</v-card-text>
       <v-col>
         <v-card>
           
