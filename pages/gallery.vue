@@ -57,7 +57,7 @@
             <v-sheet 
             id="scrolling-techniques"
             class="overflow-y-auto"
-            max-height="600">
+            max-height="800">
             <v-container fluid>
               <v-col v-for="(content, index) in gallery.contents" :key="index">
                 <v-card color="white">

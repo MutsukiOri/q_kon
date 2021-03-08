@@ -1,7 +1,7 @@
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'q_kon',
+    title: '九大混声合唱団',
     htmlAttrs: {
       lang: 'en'
     },
