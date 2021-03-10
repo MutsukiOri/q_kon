@@ -7,8 +7,23 @@
     </v-row>
     <v-row>
     <v-col cols="6" sm="4" md="3" v-for="(gallery, ind) in galleries" :key="ind" :id="gallery.id">
-      
-        <v-dialog
+      <v-card
+      tile
+      dark
+      v-bind:to=gallery.url
+      >
+        <v-img
+        v-bind:src="gallery.thumbnail"
+        class="white--text align-end"
+        gradient="to top, rgba(1,3,20,.3), rgba(1,3,20,.4)"
+        height="300"
+        >
+          <v-card-title class="justify-center">
+            {{gallery.name}}
+          </v-card-title>
+        </v-img>
+      </v-card>
+        <!-- <v-dialog
         v-model="gallery.dialog"
         width="100%"
         hide-overlay
@@ -86,36 +101,20 @@
             </v-container>
             </v-sheet>
           </v-card>
-        </v-dialog>
+        </v-dialog> -->
     </v-col>
     </v-row>
-    <!-- <v-row>
-    <div id="lightgallery" class="row">
-      <a class="col-6 col-md-4 col-lg-3" href="https://dzine.io/products/lightgallery-wp-plugin/static/images/demo/image-6-lg.jpg">
-        <img width="100%" class="img-thumbnail" src="https://dzine.io/products/lightgallery-wp-plugin/static/images/demo/thumb-6.jpg" >
-      </a>
-      <a class="col-6 col-md-4 col-lg-3" href="https://dzine.io/products/lightgallery-wp-plugin/static/images/demo/image-12-lg.jpg">
-        <img width="100%" class="img-thumbnail" src="https://dzine.io/products/lightgallery-wp-plugin/static/images/demo/thumb-12.jpg" >
-      </a>
-      <a class="col-6 col-md-4 col-lg-3" :href="imgPath">
-        <img width="100%" class="img-thumbnail" :src="imgPath">
-      </a>
-    </div>
-    </v-row> -->
   </v-container>
 </template>
 
 <script>
 import Top from '@/components/Gallery/gallerytop.vue';
 import VueGallerySlideshow from 'vue-gallery-slideshow';
-import Gallery from '~/components/Gallery/gallery.js'
-
-// import lightGallery from 'lightgallery'
+import Gallery from '~/components/Gallery/gallery.js';
   export default {
     components: {
       Top,
       VueGallerySlideshow,
-    
     },
     data: () => ({
       galleries: Gallery.gallery,
@@ -123,9 +122,5 @@ import Gallery from '~/components/Gallery/gallery.js'
       isActive: false,
       
     }),
-    mounted() {
-    const el = document.getElementById('lightgallery')
-    window.lightGallery(el)
-  }
   }
 </script>

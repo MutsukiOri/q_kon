@@ -32,7 +32,7 @@
             scroll-target="#scrolling-techniques"
             color="#F5917E"
             >
-              <v-app-bar-title class="justify-center">第56回九大混声合唱団定期演奏会</v-app-bar-title>
+              <v-toolbar-title class="justify-center">第56回九大混声合唱団定期演奏会</v-toolbar-title>
               <v-spacer></v-spacer>
               <v-btn
                 icon
