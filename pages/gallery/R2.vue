@@ -14,11 +14,7 @@
       >
         <v-icon>mdi-close</v-icon>
       </v-btn>
-      
       <v-toolbar-title class="justify-center">{{title}}</v-toolbar-title>
-      
-  
-      
     </v-app-bar>
     <v-sheet
     id="scrolling-techniques"
@@ -42,7 +38,7 @@
 </template>
 
 <script>
-import H29 from '~/components/Gallery/H29.js';
+import R2 from '~/components/Gallery/R2.js';
 export default {
   layout: 'galleries',
   components: {
@@ -53,8 +49,8 @@ export default {
             src: require('~/assets/images/concert/2019concertfront.jpg'),
             dialog: false,
             url: '/gallery',
-            title: '平成29年度',
-            gallery: H29,
+            title: '令和2年度',
+            gallery: R2,
         }
     },
     created () {

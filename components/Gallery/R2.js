@@ -1,0 +1,38 @@
+export default{
+    id: 'R2',
+    name: '令和2年度',
+    thumbnail: require('~/assets/images/R2/concert_calender/1.jpg'),
+    dialog: false,
+    url: '/gallery/R2',
+    contents: [
+        {
+            title: "定演カレンダー",
+            images: [
+                require('~/assets/images/R2/concert_calender/1.jpg'),
+                require('~/assets/images/R2/concert_calender/2.jpg'),
+                require('~/assets/images/R2/concert_calender/3.jpg'),
+                require('~/assets/images/R2/concert_calender/4.jpg'),
+                require('~/assets/images/R2/concert_calender/5.jpg'),
+                require('~/assets/images/R2/concert_calender/6.jpg'),
+                require('~/assets/images/R2/concert_calender/7-1.jpg'),
+                require('~/assets/images/R2/concert_calender/7-2.jpg'),
+                require('~/assets/images/R2/concert_calender/8-1.jpg'),
+                require('~/assets/images/R2/concert_calender/8-2.jpg'),
+                require('~/assets/images/R2/concert_calender/9.jpg'),
+                require('~/assets/images/R2/concert_calender/10-1.jpg'),
+                require('~/assets/images/R2/concert_calender/10-2.jpg'),
+                require('~/assets/images/R2/concert_calender/11.jpg'),
+                require('~/assets/images/R2/concert_calender/12.jpg'),
+                require('~/assets/images/R2/concert_calender/13.jpg'),
+                require('~/assets/images/R2/concert_calender/14.jpg'),
+                require('~/assets/images/R2/concert_calender/15.jpg'),
+                require('~/assets/images/R2/concert_calender/16.jpg'),
+                require('~/assets/images/R2/concert_calender/17.jpg'),
+                require('~/assets/images/R2/concert_calender/18.jpg'),
+                require('~/assets/images/R2/concert_calender/19.jpg'),
+                require('~/assets/images/R2/concert_calender/20.jpg'),
+            ],
+            index: null,
+        },
+    ]
+}

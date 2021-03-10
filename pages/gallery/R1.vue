@@ -8,7 +8,7 @@
     >
     <v-btn
         icon
-        dark
+        
         v-bind:to=url
         class="button"
       >
@@ -16,9 +16,6 @@
       </v-btn>
       
       <v-toolbar-title class="justify-center">{{title}}</v-toolbar-title>
-      
-  
-      
     </v-app-bar>
     <v-sheet
     id="scrolling-techniques"
@@ -36,7 +33,6 @@
           </div>
           </v-container>
         </v-card>
-      
     </v-sheet>
   </v-card>
 </template>
@@ -46,14 +42,13 @@ import R1 from '~/components/Gallery/R1.js';
 export default {
   layout: 'galleries',
   components: {
-
   },
     data () {
         return {
             src: require('~/assets/images/concert/2019concertfront.jpg'),
             dialog: false,
             url: '/gallery',
-            title: '平成29年度',
+            title: '令和元年度',
             gallery: R1,
         }
     },
