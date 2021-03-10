@@ -12,56 +12,6 @@
         詳細情報は画像をクリックorタップ
       </v-card-text>
       <v-row>
-        <!-- <v-col
-        v-for="concert in concerts"
-        :key="concert.title"
-        dense
-        cols="12"
-        sm="6"
-        lg="4"
-        >
-          <v-dialog
-          v-model="concert.dialog"
-          width="100%"
-          fullscreen
-          hide-overlay
-          transition-group="dialog-bottom-transition">
-            <template v-slot:activator="{ on, attrs }">
-            <v-card
-              tile
-              dark
-              v-bind="attrs"
-              v-on="on"
-            >
-              <v-img
-              v-bind:src="concert.src"
-              class="white--text align-end"
-              >
-              </v-img>
-            </v-card>
-          </template>
-
-          <v-card class="overflow-hidden">
-            <v-app-bar
-            dark
-            elevate-on-scroll
-            scroll-target="#scrolling-techniques"
-            color="#F5917E"
-            >
-              <v-app-bar-title class="justify-center">{{concert.title}}</v-app-bar-title>
-              <v-spacer></v-spacer>
-              <v-btn
-                icon
-                dark
-                @click="concert.dialog = false"
-              >
-                <v-icon>mdi-close</v-icon>
-              </v-btn>
-            </v-app-bar>
-            <H30/>
-          </v-card>
-          </v-dialog>
-        </v-col> -->
         <R1/>
         <H30/>
         <H29/>

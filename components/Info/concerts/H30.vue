@@ -7,7 +7,6 @@
         >
         <v-dialog
         v-model="dialog"
-        fullscreen
         hide-overlay
         transition-group="dialog-bottom-transition">
             <template v-slot:activator="{ on, attrs }">
@@ -32,8 +31,6 @@
             scroll-target="#scrolling-techniques"
             color="#F5917E"
             >
-              <v-toolbar-title class="justify-center">第55回九大混声合唱団定期演奏会</v-toolbar-title>
-              <v-spacer></v-spacer>
               <v-btn
                 icon
                 dark
@@ -41,6 +38,10 @@
               >
                 <v-icon>mdi-close</v-icon>
               </v-btn>
+              <v-spacer/>
+              <v-toolbar-title class="justify-center">第55回九大混声合唱団定期演奏会</v-toolbar-title>
+              <v-spacer/>
+              
             </v-app-bar>
             <v-sheet
             tile
