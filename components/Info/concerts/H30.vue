@@ -47,7 +47,7 @@
             tile
             id="scrolling-techniques"
             class="overflow-y-auto"
-            :max-height=height
+            height="500px"
             >
                 <v-container style="background-color:white;">
                     <div class="h30">

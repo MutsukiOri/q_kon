@@ -8,7 +8,7 @@
         <v-dialog
         v-model="dialog"
         hide-overlay
-        transition-group="dialog-bottom-transition">
+        >
             <template v-slot:activator="{ on, attrs }">
                 <v-card
                 tile
@@ -48,7 +48,7 @@
             tile
             id="scrolling-techniques"
             class="overflow-y-auto"
-            :max-height=height
+            height="500px"
             >
                 <v-container style="background-color:white;">
                     <div class="r1">
