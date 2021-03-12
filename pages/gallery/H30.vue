@@ -30,7 +30,7 @@
           <v-card-title class=" justify-center" v-text="content.title"></v-card-title>
           <v-container >
             <div class="row" :id=content.title>
-            <a v-for="(image, i) in content.images" :key="i" class="col-6 col-md-4" :href=image>
+            <a v-for="(image, i) in content.images" :key="i" class="col-6 col-sm-4 col-md-3 col-lg-2" :href=image>
               <img width="100%" :src=image >
             </a>
           </div>
