@@ -10,10 +10,10 @@
       <v-card-title v-text="title"/>
       <!-- <v-card-text>気になる項目をクリックorタップ</v-card-text> -->
       <v-col>
-        <v-card>
+        <v-card color="#f6c0d1">
           
-            <v-card-title outlined>更新情報</v-card-title>
-            <v-card-subtitle>気になる項目をクリックorタップ</v-card-subtitle>
+            <v-card-title class="text-white ml-4">更新情報</v-card-title>
+            <v-card-subtitle class="text-white ml-4">気になる項目をクリックorタップ</v-card-subtitle>
             <v-card-text>
             <virtual-list  style="height: 200px; overflow-y: auto;"
             :data-key="'date'"
@@ -25,9 +25,9 @@
         </v-card>
       </v-col>
       <v-col>
-        <v-card>
+        <v-card color="#f6c0d1">
           <v-container>
-            <v-card-title>News</v-card-title>
+            <v-card-title class="text-white">News</v-card-title>
             
             <virtual-list  style="height: 400px; overflow-y: auto;"
             :data-key="'date'"

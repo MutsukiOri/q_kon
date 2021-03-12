@@ -1,7 +1,9 @@
 <template>
-  <v-card outlined class="pb-2">
+  <v-card light outlined class="">
       <v-card-title>{{ source.title }}</v-card-title>
-      <v-card-subtitle>{{ source.date }}</v-card-subtitle>
+      <v-card-subtitle>
+        {{ source.date }}
+      </v-card-subtitle>
       <v-card-text 
         style="word-wrap:break-word;">
         {{ source.text }}

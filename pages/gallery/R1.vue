@@ -4,11 +4,11 @@
     dark
     elevate-on-scroll
     scroll-target="#scrolling-techniques"
-    color="#F5917E"
+    color="#d7b63d"
     >
     <v-btn
         icon
-        
+        color="#cb7f69"
         v-bind:to=url
         class="button"
       >
@@ -16,14 +16,15 @@
       </v-btn>
       
       <v-toolbar-title class="justify-center">{{title}}</v-toolbar-title>
+      こんに
     </v-app-bar>
     <v-sheet
     id="scrolling-techniques"
     class="overflow-y-auto"
-    color="#f7be81"
+    color="#cb7f69"
     :max-height=height>
       
-        <v-card tile v-for="(content, index) in gallery.contents" :key="index" class="ma-2">
+        <v-card color="#f8ecda" tile v-for="(content, index) in gallery.contents" :key="index" class="ma-7">
           <v-card-title class=" justify-center" v-text="content.title"></v-card-title>
           <v-container >
             <div class="row" :id=content.title>
