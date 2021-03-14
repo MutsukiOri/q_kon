@@ -3,25 +3,25 @@
     <v-row>
       <v-col
       :cols=12
-      
+      class="pb-0"
       >
       <Top/>
       </v-col>
       <v-col
       :cols=12
-      
+      class="pb-0"
       >
       <Record/>
       </v-col>
       <!-- <v-col
       :cols=12
-      
+      class="pb-0"
       >
       <Member/>
       </v-col> -->
       <v-col
       :cols=12
-      
+      class=""
       >
       <Advisor/>
       </v-col>

@@ -1,5 +1,5 @@
 <template>
-  <v-card color="#fcebef" tile outlined class="ma-2 card" v-bind:to=source.url>
+  <v-card light outlined class="ma-2 card" v-bind:to=source.url>
       
       <v-card-subtitle>{{ source.date }}</v-card-subtitle>
       <v-card-text>

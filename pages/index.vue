@@ -4,28 +4,28 @@
         <v-col
           :cols=12
           dense
-          class="pa-2"
+          class="pb-0"
         >
         <Top/>
         </v-col>
         <v-col
           :cols=12
           dense
-          class="pa-2"
+          class="pb-0"
         >
         <News/>
         </v-col>
         <v-col
           :cols=12
           dense
-          class="pa-2"
+          class="pb-0"
         >
         <Plan/>
         </v-col>
         <v-col
           :cols=12
           dense
-          class="pa-2"
+          class=""
         >
         <Schedule/>
         </v-col>

@@ -1,5 +1,5 @@
 <template>
-  <v-card light outlined class="">
+  <v-card light outlined class="ma-2">
       <v-card-title>{{ source.title }}</v-card-title>
       <v-card-subtitle>
         {{ source.date }}

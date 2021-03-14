@@ -1,9 +1,9 @@
 <template>
-    <v-card id="calendar">
+    <v-card tile id="calendar">
     <v-img
         :src="imgPath"
         class="white--text align-start"
-        gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
+        gradient="to top, rgba(0,10,10,.5), rgba(10,10,10,.5)"
         
     >
         <v-container>

@@ -1,19 +1,19 @@
 <template>
-    <v-card id="news">
+    <v-card tile id="news">
     <v-img
         v-bind:src="imgPath"
         class="white--text align-center"
-        gradient="to bottom, rgba(10,0,0,.1), rgba(0,0,0,.3)"
+        gradient="to bottom, rgba(0,33,59,.7), rgba(252,235,239,.7)"
         
     >
     <v-container>
       <v-card-title v-text="title"/>
       <!-- <v-card-text>気になる項目をクリックorタップ</v-card-text> -->
       <v-col>
-        <v-card color="#f6c0d1">
+        <v-card color="#cee2df">
           
-            <v-card-title class="text-white ml-4">更新情報</v-card-title>
-            <v-card-subtitle class="text-white ml-4">気になる項目をクリックorタップ</v-card-subtitle>
+            <v-card-title style="color:#00213b" class="ml-4">更新情報</v-card-title>
+            <v-card-subtitle style="color:#00213b" class="ml-4">気になる項目をクリックorタップ</v-card-subtitle>
             <v-card-text>
             <virtual-list  style="height: 200px; overflow-y: auto;"
             :data-key="'date'"
@@ -26,16 +26,14 @@
       </v-col>
       <v-col>
         <v-card color="#f6c0d1">
-          <v-container>
-            <v-card-title class="text-white">News</v-card-title>
-            
+            <v-card-title style="color:#ef8893" class="ml-4">News</v-card-title>
+            <v-card-text>
             <virtual-list  style="height: 400px; overflow-y: auto;"
             :data-key="'date'"
             :data-sources="news"
             :data-component="newsComponent"
             />
-            
-            </v-container>
+            </v-card-text>
             </v-card>
       </v-col>
         </v-container>

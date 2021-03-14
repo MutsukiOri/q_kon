@@ -3,13 +3,13 @@
     <v-img
         v-bind:src="imgPath"
         class="white--text align-center"
-        gradient="to top, rgba(1,3,20,.7), rgba(1,3,20,.6)"
+        gradient="to top, rgba(1,3,20,.5), rgba(1,3,20,.5)"
         height="400"
       >
       <v-container>
-        <v-card-title v-text="title"></v-card-title>
+        <v-card-title style="color:white" v-text="title"></v-card-title>
         <v-card-text
-        style="white-space:pre-wrap; word-wrap:break-word;"
+        style="white-space:pre-wrap; word-wrap:break-word; color:white;"
         v-text="text">
         </v-card-text>
         <v-row><!-- 位置調整 -->

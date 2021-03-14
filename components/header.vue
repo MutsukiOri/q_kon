@@ -4,7 +4,7 @@
       absolute
       prominent
       dark
-      
+      flat
       v-bind:src="imgPath"
     >
       <template v-slot:img="{ props }">
@@ -14,7 +14,7 @@
         ></v-img>
       </template>
     <mq-layout mq='sm'>
-      <v-app-bar-nav-icon @click="drawer = true">
+      <v-app-bar-nav-icon style="color:white" @click="drawer = true">
       </v-app-bar-nav-icon>
       <v-navigation-drawer
       app
@@ -22,7 +22,7 @@
       absolute
       temporary
       floating
-      color="rgba(0,0,0,0.8)"
+      color="rgba(243,167,172,0.8)"
       >
         <v-list
           nav
@@ -47,13 +47,16 @@
       </v-navigation-drawer>
 
     </mq-layout>
-
     <v-app-bar-title
     class="pl-10"
+    style="color:white"
     >
+      歌うヨロコビ。
+      <br/>
       <strong>
         九大混声合唱団
       </strong>
+      
     </v-app-bar-title>
 
     <v-spacer></v-spacer>
@@ -77,7 +80,6 @@
         {{ menuItem.name }}
       </v-btn>
     </mq-layout>
-
   </v-app-bar>
 </template>
 
