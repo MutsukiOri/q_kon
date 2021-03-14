@@ -1,7 +1,7 @@
 export default {
     years: [
         {
-        name: 'R1',
+        name: '令和元年度',
         records: [
             {
                 date:  '2019.12.15',
@@ -27,7 +27,7 @@ export default {
         
     },
     {
-    name: 'H30',
+    name: '平成30年度',
     records: [
         {
             date: '2018.12.16',
@@ -47,7 +47,7 @@ export default {
     ]
     },
     {
-        name: 'H29',
+        name: '平成29年度',
         records: [
             {
                 date:  '2017.12.17',
@@ -72,7 +72,7 @@ export default {
         ]
     },
     {
-        name: 'H28',
+        name: '平成28年度',
         records: [
             {
                 date: '2016.12.10',
@@ -92,7 +92,7 @@ export default {
         ]
     },
     {
-        name: 'H27',
+        name: '平成27年度',
         records: [
             {
                 date:  '2015.12.10',

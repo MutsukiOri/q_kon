@@ -1,57 +1,69 @@
 <template>
     <v-card
+    tile
     class=" justify-center"
     id="record"
     >
     <v-img
         v-bind:src="imgPath"
         class="white--text align-start"
-        gradient="to bottom, rgba(10,10,10,.6), rgba(20,20,10,.5)"
+        gradient="to bottom, rgba(210,213,236,1), rgba(210,213,236,.4)"
     >
     <v-container>
-    <v-card-title>
+    <v-card-title style="color:#63676b;">
         活動実績
     </v-card-title>
+    <v-sheet
+    rounded
+    id="scrolling-techniques"
+    class="overflow-y-auto mb-6"
+    height="600px"
+    color="rgba(0,0,0,0)">
+        <v-container>
         <v-timeline
-        dense
-        reverse
-        max-width="500px"
         >
-            <v-timeline-item
+            <!-- <v-timeline-item
             v-for="(year, index) in years" 
             :key="index"
-            left
-            
-            >
-            <template v-slot:icon>
-                <v-avatar size='50px' color='indigo'>
+            small
+            color='#d4b572'
+            > -->
+            <!-- <template v-slot:opposite>
+                
                     {{year.name}}
-                </v-avatar>
-            </template>
-            <v-card class="elevation-2" color="#F5917E lighten-2" >
+
+            </template> -->
+            <v-card v-for="(year, index) in years" 
+            :key="index" 
+            dark 
+            flat
+            class="ma-6" 
+            color='#63676b'>
+                <v-card-title style="color:#d2d5ec;" class="pl-10">
+                    {{year.name}}
+                </v-card-title>
                 <v-card-text>
                     <v-card
                     outlined
+                    dark
                     tile
+                    color="#d2d5ec"
+                    class="mb-2"
                     v-for="(record, index) in year.records" 
                     :key="index">
                         
-                        <!-- <v-row
-                        justify="center"
-                        no-gutters>
-                        <v-col cols="12" md="2" class="date">{{record.date}}</v-col>
-                        <v-col cols="10" ><strong>{{ record.title }}</strong></v-col>
-                        <v-col cols="8">{{record.place}}</v-col>
-                        </v-row> -->
-                        <v-card-title style="white-space:pre-wrap; word-wrap:break-word;">{{record.title}}</v-card-title>
-                        <v-card-subtitle>{{record.date}}  {{record.place}}</v-card-subtitle>
-                        <!-- <v-card-text>{{record.place}}</v-card-text> -->
+                        
+                        <v-card-title style="white-space:pre-wrap; word-wrap:break-word; color:#63676b;">{{record.title}}</v-card-title>
+                        <v-card-subtitle style="color:#63676b">{{record.date}}  {{record.place}}</v-card-subtitle>
+                        
                     </v-card>
                     
                 </v-card-text>
             </v-card>
-            </v-timeline-item>
+            <!-- </v-timeline-item> -->
         </v-timeline>
+        </v-container>
+    </v-sheet>
     </v-container>
     </v-img>
   </v-card>

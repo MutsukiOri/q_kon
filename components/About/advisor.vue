@@ -1,5 +1,5 @@
 <template>
-  <v-card id="advisor">
+  <v-card tile id="advisor">
     <v-img
     v-bind:src="imgPath"
     class="white--text align-center"
