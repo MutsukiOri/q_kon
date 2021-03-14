@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/gallery/R1", {data:[{}],fetch:[],mutations:void 0});
