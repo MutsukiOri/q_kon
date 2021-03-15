@@ -10,7 +10,7 @@
       <template v-slot:img="{ props }">
         <v-img
           v-bind="props"
-          gradient="to right, rgba(255, 161, 193,0.5), rgba(51, 25, 34, 0.6)"
+          gradient="to right, rgba(243,167,172,0.6), rgba(243,167,172,0.6)"
         ></v-img>
       </template>
     <mq-layout mq='sm'>

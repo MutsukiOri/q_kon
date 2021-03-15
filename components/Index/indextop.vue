@@ -7,9 +7,9 @@
         height="400"
       >
       <v-container>
-        <v-card-title style="color:white" v-text="title"></v-card-title>
+        <v-card-title style="color:#fcedfd" v-text="title"></v-card-title>
         <v-card-text
-        style="white-space:pre-wrap; word-wrap:break-word; color:white;"
+        style="color:#fcecfd; white-space:pre-wrap; word-wrap:break-word;"
         v-text="text">
         </v-card-text>
         <v-row><!-- 位置調整 -->
@@ -25,7 +25,7 @@
             <v-btn
             rounded
             outlined
-            color="white"
+            color="#fcecfd"
             v-scroll-to=buttonItem.target
             >
               <v-icon>{{ buttonItem.icon }}</v-icon>
