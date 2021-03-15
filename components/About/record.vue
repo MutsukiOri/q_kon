@@ -38,8 +38,8 @@
             dark 
             flat
             class="ma-6" 
-            color='#63676b'>
-                <v-card-title style="color:#d2d5ec;" class="pl-10">
+            color='rgba(99, 105, 107,0)'>
+                <v-card-title style="color:#63676b;" class="pl-10">
                     {{year.name}}
                 </v-card-title>
                 <v-card-text>
