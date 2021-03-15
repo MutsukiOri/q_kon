@@ -7,9 +7,9 @@
         height="400"
       >
       <v-container>
-        <v-card-title v-text="title"></v-card-title>
+        <v-card-title style="color:#d2d5ec;" v-text="title"></v-card-title>
         <v-card-text
-        style="white-space:pre-wrap; word-wrap:break-word;"
+        style="white-space:pre-wrap; word-wrap:break-word; color:#d2d5ec;"
         v-text="text">
         </v-card-text>
         <v-row>
@@ -23,7 +23,7 @@
             <v-btn
             rounded
             outlined
-            color="white"
+            color="#d2d5ec"
             v-scroll-to=buttonItem.target
             >
               <v-icon>{{ buttonItem.icon }}</v-icon>
