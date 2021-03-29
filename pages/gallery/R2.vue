@@ -4,7 +4,7 @@
     dark
     elevate-on-scroll
     scroll-target="#scrolling-techniques"
-    color="#6a4928"
+    color="#F5917E"
     >
     <v-btn
         icon
@@ -19,10 +19,10 @@
     <v-sheet
     id="scrolling-techniques"
     class="overflow-y-auto"
-    color="#4977bc"
+    color="#f7be81"
     :max-height=height>
       
-        <v-card color="#092237" dark tile v-for="(content, index) in gallery.contents" :key="index" class="ma-2">
+        <v-card tile v-for="(content, index) in gallery.contents" :key="index" class="ma-2">
           <v-card-title class="justify-center" v-text="content.title"></v-card-title>
           <v-container >
             <div class="row" :id=content.title>

@@ -10,7 +10,7 @@
       <template v-slot:img="{ props }">
         <v-img
           v-bind="props"
-          gradient="to right, rgba(243,167,172,0.6), rgba(243,167,172,0.6)"
+          gradient="to bottom right, rgba(24,16,17,0.4), rgba(243,167,172,0.6)"
         ></v-img>
       </template>
     <mq-layout mq='sm'>
@@ -51,7 +51,9 @@
     class="pl-10"
     style="color:white"
     >
+      <strong>
       歌うヨロコビ。
+      </strong>
       <br/>
       <strong>
         九大混声合唱団

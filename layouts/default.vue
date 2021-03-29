@@ -6,7 +6,7 @@
       v-model="drawer"
       absolute
       temporary
-      light
+      dark
       floating
       color="rgba(243,167,172,0.8)"
       >
