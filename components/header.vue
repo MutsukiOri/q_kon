@@ -14,9 +14,9 @@
         ></v-img>
       </template>
     <mq-layout mq='sm'>
-      <v-app-bar-nav-icon style="color:white" @click="drawer = true">
+      <v-app-bar-nav-icon style="color:white" @click="$emit('navigationDrawer')">
       </v-app-bar-nav-icon>
-      <v-navigation-drawer
+      <!-- <v-navigation-drawer
       app
       v-model="drawer"
       absolute
@@ -44,7 +44,7 @@
 
           </v-list-item-group>
         </v-list>
-      </v-navigation-drawer>
+      </v-navigation-drawer> -->
 
     </mq-layout>
     <v-app-bar-title
