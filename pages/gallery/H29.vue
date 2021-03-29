@@ -40,7 +40,7 @@
 </template>
 
 <script>
-import H29 from '~/components/Gallery/H29.js';
+import H29 from '~/components/contents/Gallery/H29.js';
 export default {
   layout: 'galleries',
   components: {

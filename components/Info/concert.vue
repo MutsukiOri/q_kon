@@ -22,9 +22,9 @@
 </template>
 
 <script>
-import R1 from '@/components/Info/concerts/R1.vue'
-import H30 from '@/components/Info/concerts/H30.vue'
-import H29 from '@/components/Info/concerts/H29.vue'
+import R1 from '../contents/Info/concerts/R1.vue'
+import H30 from '../contents/Info/concerts/H30.vue'
+import H29 from '../contents/Info/concerts/H29.vue'
 export default {
   components: {
     R1,

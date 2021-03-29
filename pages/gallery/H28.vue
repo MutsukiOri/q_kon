@@ -42,7 +42,7 @@
 </template>
 
 <script>
-import H28 from '~/components/Gallery/H28.js';
+import H28 from '~/components/contents/Gallery/H28.js';
 export default {
   layout: 'galleries',
   components: {

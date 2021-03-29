@@ -8,7 +8,7 @@
     >
     <v-btn
         icon
-        color="#cb7f69"
+        dark
         v-bind:to=url
         class="button"
       >
@@ -38,7 +38,7 @@
 </template>
 
 <script>
-import R1 from '~/components/Gallery/R1.js';
+import R1 from '~/components/contents/Gallery/R1.js';
 export default {
   layout: 'galleries',
   components: {

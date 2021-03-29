@@ -42,7 +42,7 @@
 </template>
 
 <script>
-import H30 from '~/components/Gallery/H30.js';
+import H30 from '~/components/contents/Gallery/H30.js';
 export default {
   layout: 'galleries',
   components: {

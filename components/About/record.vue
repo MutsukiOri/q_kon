@@ -7,7 +7,7 @@
     <v-img
         v-bind:src="imgPath"
         class="white--text align-start"
-        gradient="to bottom, rgba(210,213,236,.9), rgba(210,213,236,.2)"
+        gradient="to bottom, rgba(210,213,236,.9), rgba(21,21,23,.5)"
     >
     <v-container>
     <v-card-title style="color:#63676b;">
@@ -70,7 +70,7 @@
 </template>
 
 <script>
-import Records from './records'
+import Records from '../contents/About/records'
 export default {
     data () {
       return {

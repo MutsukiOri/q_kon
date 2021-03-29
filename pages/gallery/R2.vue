@@ -38,7 +38,7 @@
 </template>
 
 <script>
-import R2 from '~/components/Gallery/R2.js';
+import R2 from '~/components/contents/Gallery/R2.js';
 export default {
   layout: 'galleries',
   components: {

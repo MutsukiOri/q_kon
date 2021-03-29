@@ -42,8 +42,8 @@
 </template>
 
 <script>
-import Renews from './renews'
-import News from './news'
+import Renews from '../contents/Index/renews'
+import News from '../contents/Index/news'
 import newsItem from './newsItem'
 import renewsItem from './renewsItem'
 import VirtualList from 'vue-virtual-scroll-list'
