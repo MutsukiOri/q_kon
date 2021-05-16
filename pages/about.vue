@@ -13,12 +13,7 @@
       >
       <Record/>
       </v-col>
-      <!-- <v-col
-      :cols=12
-      class="pb-0"
-      >
-      <Member/>
-      </v-col> -->
+
       <v-col
       :cols=12
       class=""
